@@ -1,0 +1,6 @@
+# pip install -r requirements.txt
+
+# base ----------------------------------------
+pyttsx3
+pynput==1.6.8
+opencv-python>=4.2.0.34
