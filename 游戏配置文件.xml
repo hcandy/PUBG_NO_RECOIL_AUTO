@@ -1,0 +1,1754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profiles xmlns="http://www.logitech.com/Cassandra/2010.7/Profile">
+  <profile gameid="" guid="{80E2A6DD-FD63-48AE-8C80-806FFA19083A}" gkeysdk="0" lock="0" lastplayeddate="2017-05-24T10:56:19" gpasupported="0" name="Playerunknown's Battlegrounds" launchable="1">
+    <description>Playerunknown's Battlegrounds</description>
+    <target path="D:\Steam\steamapps\common\PUBG\TslGame\Binaries\Win64\TslGame.exe"/>
+    <signature executable="TSLGAME\BINARIES\WIN64\TSLGAME.EXE" value="InstallLocation" key="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 578080" name=""/>
+    <macros>
+      <macro guid="{E9D141A2-C19C-4DFF-BF86-BCE25A0E43BE}" color="4286578943" original="true" name="右移" hidden="false">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="D"/>
+        </keystroke>
+      </macro>
+      <macro guid="{E17FD390-458B-4266-8665-B9FA3704435F}" color="4286578943" original="true" name="左移" hidden="false">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="A"/>
+        </keystroke>
+      </macro>
+      <macro guid="{8AE557B2-4775-4BC2-9877-DD627CE43692}" color="4278246655" original="true" name="鼠标" hidden="false">
+        <mouse xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Mouse"/>
+      </macro>
+      <macro guid="{5DAFA657-7E0B-4D37-9F7A-FA252ED551E6}" color="4278246655" name="左键单击" hidden="false">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="leftclick"/>
+        </mousefunction>
+      </macro>
+      <macro guid="{9D0F4485-F6CE-49AF-B3FB-328DBF996F1E}" color="4278246655" name="右键单击" hidden="false">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="rightclick"/>
+        </mousefunction>
+      </macro>
+      <macro guid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" color="4278246655" name="单击中键" hidden="false">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="middleclick"/>
+        </mousefunction>
+      </macro>
+      <macro guid="{A0D817F6-1D5D-483B-ADD0-2634CD93D42A}" color="4278246655" name="返回" hidden="false">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="back"/>
+        </mousefunction>
+      </macro>
+      <macro guid="{8B13562D-60F2-460F-9588-8C84168C81BC}" color="4278246655" name="前进" hidden="false">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="forward"/>
+        </mousefunction>
+      </macro>
+      <macro guid="{A1FEC5BC-9A8A-49C5-B085-0E2EDCEF1F55}" color="4278246655" devicecategory="Logitech.Gaming.Mouse" name="切换 DPI" hidden="false">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="dpishift"/>
+        </mousefunction>
+      </macro>
+      <macro guid="{12C9716B-4D7A-4F6F-AF20-A0369219119A}" color="4278246655" devicecategory="Logitech.Gaming.Mouse" name="降低 DPI" hidden="false">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="dpidown"/>
+        </mousefunction>
+      </macro>
+      <macro guid="{68A1C0B2-2996-4992-9CC5-3285AC8E9740}" color="4278246655" devicecategory="Logitech.Gaming.Mouse" name="提高 DPI" hidden="false">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="dpiup"/>
+        </mousefunction>
+      </macro>
+      <macro guid="{C241DB13-C060-4CC4-B27A-16CCB0C9F0F7}" color="4278246655" name="向右滚动" hidden="false">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="scrollright"/>
+        </mousefunction>
+      </macro>
+      <macro guid="{610C3518-335B-4497-B9AC-605E52E450E9}" color="4278246655" name="向左滚动" hidden="false">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="scrollleft"/>
+        </mousefunction>
+      </macro>
+      <macro guid="{4289AFA3-C284-437E-BD18-09368542E92B}" color="4278246655" name="F1" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{9DB0B519-555E-4029-A3D7-B89B4ED17DC2}" color="4278246655" name="F2" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{0DCFA951-8742-4304-BA43-AD8EB3BD3DB9}" color="4278246655" name="F3" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{F600A2B9-7477-4625-9ABA-94D8C1EA840A}" color="4278246655" name="F4" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{CC41A64F-9B8C-4FD6-8491-69CDE545696D}" color="4278246655" name="F5" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{6F7D6A25-C811-4442-87B7-212C23D8905E}" color="4278246655" name="F6" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{0C2A3F47-F4EF-4031-9425-C91DAE1BCC1C}" color="4278246655" name="F7" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{75852E01-469E-48AA-A13C-8D4781270F42}" color="4278246655" name="F8" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{34E605F3-AD1D-4300-AE2B-A1A893A7A6E3}" color="4278246655" name="F9" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{983F02CC-8E61-472E-B9D4-3DD74E5B22CD}" color="4278246655" name="F10" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{8EC55C2C-7843-4217-9AAB-AF609A9A5DE2}" color="4278246655" name="F11" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{336A6285-6FC8-47DC-8FD2-7C828BAFEFCE}" color="4278246655" name="F12" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{9B929CDE-170F-4C2F-BA21-2515FA3EFDF7}" color="4278246655" name="ScrollLock" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{0D12636B-5C1E-4A5A-B6AA-6FBEFF6E6C11}" color="4278246655" name="NumLock" hidden="true">
+        <natural xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Natural"/>
+      </macro>
+      <macro guid="{CABCB347-688D-4CD1-83A3-42F0E508FE6E}" color="4278233568" name="Decrease Zeroing" hidden="false" backupguid="{15FADBD3-97FC-48CA-882B-9EF59F6FA66E}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="PAGEDOWN"/>
+        </keystroke>
+      </macro>
+      <macro guid="{2CE98616-4BD6-46A3-873E-25EE0F081EE9}" color="4278233568" name="Freelook" hidden="false" backupguid="{F90027A0-9152-42FA-97FF-D3B7B682E7D2}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="LALT"/>
+        </keystroke>
+      </macro>
+      <macro guid="{4EC85A47-7201-4E2C-928E-EFC1E974F2B5}" color="4278233568" name="In Game Menu" hidden="false" backupguid="{D590F8DE-4719-4B1A-A907-1C0F3C1AC6A1}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="ESCAPE"/>
+        </keystroke>
+      </macro>
+      <macro guid="{FA3F2F2A-EB44-4BF6-80A9-C18738F1266E}" color="4278233568" name="Increase Zeroing" hidden="false" backupguid="{A6E14FC8-9EEF-4C84-BB5B-B6D74F66563C}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="PAGEUP"/>
+        </keystroke>
+      </macro>
+      <macro guid="{2F347166-6956-4BBF-A643-19D9074446BA}" color="4294922240" name="Interact" hidden="false" backupguid="{9EF853F1-AF1F-4088-B351-A222DE6458B5}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="F"/>
+        </keystroke>
+      </macro>
+      <macro guid="{B521BD0E-C07F-472F-A9FE-F7BE42E124BA}" color="4286578943" name="Jump" hidden="false" backupguid="{DA549BEF-6198-4F57-A1B4-E35967C7C0AE}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="SPACEBAR"/>
+        </keystroke>
+      </macro>
+      <macro guid="{208C4446-0CF0-40E3-89FD-1D91DB98A665}" color="4286578943" name="Move Backward" hidden="false" backupguid="{8148F734-10E3-4593-BAC6-4541F6FC7A3E}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="S"/>
+        </keystroke>
+      </macro>
+      <macro guid="{9699341A-6BDC-4C65-B6E8-086F42461816}" color="4286578943" name="Move Forward" hidden="false" backupguid="{3E0A6AC0-4C8D-47AE-9EEE-96DFB96134D2}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="W"/>
+        </keystroke>
+      </macro>
+      <macro guid="{F0D4ACA5-422D-4CAC-B41D-12E18016F207}" color="4294922240" name="Next Weapon" hidden="false" backupguid="{D511B4CB-2A3C-4BC7-9346-F9910599458D}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="G"/>
+        </keystroke>
+      </macro>
+      <macro guid="{71EE7B3D-FE64-4854-B907-B84F0A1E1F66}" color="4286578943" name="Peek Left" hidden="false" backupguid="{8A69AECE-736A-4BD8-B22B-12A9B2C9F98F}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="Q"/>
+        </keystroke>
+      </macro>
+      <macro guid="{8AC9F67D-F346-4905-B6FF-8D8417C70DB7}" color="4286578943" name="Peek Right" hidden="false" backupguid="{0293D089-00B8-4ADB-83B1-F008A01A3279}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="E"/>
+        </keystroke>
+      </macro>
+      <macro guid="{85D25E47-AC53-42A8-AE96-F7E438996733}" color="4278233568" name="Push To Talk" hidden="false" backupguid="{306A1A51-3731-427D-B18B-43206EFFAF52}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="T"/>
+        </keystroke>
+      </macro>
+      <macro guid="{8336C59E-2AD8-4421-921A-29FC06846E0D}" color="4294922240" name="Reload" hidden="false" backupguid="{15AAC495-6AF9-47B3-9BDE-1101127C760E}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="R"/>
+        </keystroke>
+      </macro>
+      <macro guid="{0AC5637A-4B95-466B-B5BB-B17586B547BD}" color="4286578943" name="Sprint" hidden="false" backupguid="{D391403A-2347-47FC-AFE2-08F7647B71E4}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="LSHIFT"/>
+        </keystroke>
+      </macro>
+      <macro guid="{2845B74D-1195-422E-9C6D-4398DC7560C4}" color="4278233568" name="To Vehicle Seat 1" hidden="false" backupguid="{4D61D284-0583-4B93-BCA0-6BBAC6FACDE2}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="1"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </macro>
+      <macro guid="{E574FB1A-E4A0-4A3E-9CF0-7568725B8FC5}" color="4278233568" name="To Vehicle Seat 2" hidden="false" backupguid="{70B3B7E5-4980-49C3-9545-220B4C4E6BB3}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="2"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </macro>
+      <macro guid="{C0A63FB0-9E56-4D75-8C33-981D8BFEDD11}" color="4278233568" name="To Vehicle Seat 3" hidden="false" backupguid="{3C3FA46B-418E-4E82-A58D-703C68A2032C}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="3"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </macro>
+      <macro guid="{206A0DD9-6A9B-44C3-BCF1-3909E58DEC00}" color="4278233568" name="To Vehicle Seat 4" hidden="false" backupguid="{666EB116-DA97-46D1-A5F4-2C0FCEAB7F18}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="4"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </macro>
+      <macro guid="{CFDE4C4A-B89C-40BC-A2DE-2466D7054D12}" color="4278233568" name="To Vehicle Seat 5" hidden="false" backupguid="{DE9E65E5-E373-4656-9799-12594F694DC5}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="5"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </macro>
+      <macro guid="{15561421-B408-4424-9F52-EB9AC43AB82D}" color="4286578943" name="Toggle AutoRun" hidden="false" backupguid="{9C5EF630-EA18-4A88-A133-CCCDB48498EF}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="EQUAL"/>
+        </keystroke>
+      </macro>
+      <macro guid="{98334225-5278-473A-B980-870825AE1202}" color="4278233568" name="Toggle Camera" hidden="false" backupguid="{522D4FDD-72D3-4EC6-867C-1AB46EE95D8B}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="V"/>
+        </keystroke>
+      </macro>
+      <macro guid="{871194AB-4725-431C-8ACC-21045A7BFF25}" color="4286578943" name="Toggle Crouch" hidden="false" backupguid="{3719CC42-276C-4D72-B817-801CD105ADBE}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="C"/>
+        </keystroke>
+      </macro>
+      <macro guid="{7FA7DE61-EC0E-45BA-A570-862B84A4312E}" color="4294922240" name="Toggle Firing Mode" hidden="false" backupguid="{B4287C4D-E13B-4BE9-ABD2-FFA4EF26388B}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="B"/>
+        </keystroke>
+      </macro>
+      <macro guid="{6EFB2B2E-FD08-49CD-8171-4B4E4AB5FA1F}" color="4278233568" name="Toggle Inventory" hidden="false" backupguid="{FE7FA0FA-1393-4CEF-B84A-300249AB379A}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="I"/>
+        </keystroke>
+      </macro>
+      <macro guid="{BD118C48-E62C-494E-BD19-63097C63A76F}" color="4278233568" name="Toggle Map" hidden="false" backupguid="{301B9029-7522-4347-AD3E-9AED20B0CABB}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="M"/>
+        </keystroke>
+      </macro>
+      <macro guid="{C697E81E-8A2D-45D1-BA5D-F292F1E4608A}" color="4278233568" name="Toggle Mute Voice Chat" hidden="false" backupguid="{955C5E62-8700-4714-992E-8341B881F6AB}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="T"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </macro>
+      <macro guid="{7E474987-FD0E-4091-A03F-FA5695016874}" color="4286578943" name="Toggle Prone" hidden="false" backupguid="{4066EDD7-7CAE-4720-BF03-4C6CBAE166C6}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="Z"/>
+        </keystroke>
+      </macro>
+      <macro guid="{CBDB3CDB-F1B9-4215-8F92-05DAA18005EB}" color="4278233568" name="Toggle UI" hidden="false" backupguid="{91788A6E-82B4-47B2-B0EE-489AB0B236E9}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="U"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </macro>
+      <macro guid="{DF7FC88F-FFD8-46CC-86D2-C6A89FD33AB1}" color="4294922240" name="Unarm" hidden="false" backupguid="{84E7826B-2585-4C79-8617-84B6132F326E}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="X"/>
+        </keystroke>
+      </macro>
+      <macro guid="{6B2E46D9-EAD5-4FD9-854D-7555B5E4AEC2}" color="4294922240" name="Use Bandage" hidden="false" backupguid="{38F24B49-B82E-4F64-A23D-FD31E27E0569}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="9"/>
+        </keystroke>
+      </macro>
+      <macro guid="{C1773780-3C04-44B2-888E-FE20F3DD836A}" color="4294922240" name="Use Boost item" hidden="false" backupguid="{8E56E44C-C426-4A65-828D-DDB7469CAE7E}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="0"/>
+        </keystroke>
+      </macro>
+      <macro guid="{CC502A7A-159A-4779-A316-A07303FEE99E}" color="4294922240" name="Use FirstAid" hidden="false" backupguid="{60115E33-B956-4680-8D5B-BAA72E8BC1CC}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="8"/>
+        </keystroke>
+      </macro>
+      <macro guid="{C26831D8-10D3-467F-8B81-EC0881968630}" color="4294922240" name="Use MedKit" hidden="false" backupguid="{CC6EC44A-D51C-4670-8F79-366E6112D267}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="7"/>
+        </keystroke>
+      </macro>
+      <macro guid="{2DE57915-00A6-48DF-9C01-6F75DEBE57D1}" color="4286578943" name="Walk" hidden="false" backupguid="{B72295E3-B8AC-40C1-817B-660BF7B28692}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="LCTRL"/>
+        </keystroke>
+      </macro>
+      <macro guid="{2E9BD9C9-877A-4C11-B189-948440237989}" color="4294922240" name="Weapon 1" hidden="false" backupguid="{66F226DE-A302-4CD2-A425-B7FC8416C8AF}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="1"/>
+        </keystroke>
+      </macro>
+      <macro guid="{03C75767-9F90-479A-AB7B-13F95CFB7BB3}" color="4294922240" name="Weapon 2" hidden="false" backupguid="{99E5A49B-FD6D-4214-8FE3-EDAF87CB5CAA}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="2"/>
+        </keystroke>
+      </macro>
+      <macro guid="{E607DAAF-963D-40A3-84FB-D7ED43669AFC}" color="4294922240" name="Weapon 3" hidden="false" backupguid="{1912D4F3-EBA2-4FAE-81F9-9FA6D99FFC13}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="3"/>
+        </keystroke>
+      </macro>
+      <macro guid="{04100BC1-CAF3-4B8E-9F0B-C3EE18D9FF60}" color="4294922240" name="Weapon 4" hidden="false" backupguid="{40865CBE-9B99-4A56-9D2A-0B763AE3442C}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="4"/>
+        </keystroke>
+      </macro>
+      <macro guid="{105FF5C7-B254-488A-9619-861A2503F365}" color="4294922240" name="Weapon 5" hidden="false" backupguid="{32CFC979-D772-4D28-8E1B-37923E78E810}">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="5"/>
+        </keystroke>
+      </macro>
+    </macros>
+    <assignments devicecategory="Logitech.Gaming.Function.Keyboard">
+      <assignment backup="false" contextid="G1" original="false" macroguid="{4289AFA3-C284-437E-BD18-09368542E92B}" shiftstate="1"/>
+      <assignment backup="false" contextid="G1" original="false" macroguid="{4289AFA3-C284-437E-BD18-09368542E92B}" shiftstate="4"/>
+      <assignment backup="false" contextid="G2" original="false" macroguid="{9DB0B519-555E-4029-A3D7-B89B4ED17DC2}" shiftstate="1"/>
+      <assignment backup="false" contextid="G2" original="false" macroguid="{9DB0B519-555E-4029-A3D7-B89B4ED17DC2}" shiftstate="4"/>
+      <assignment backup="false" contextid="G3" original="false" macroguid="{0DCFA951-8742-4304-BA43-AD8EB3BD3DB9}" shiftstate="1"/>
+      <assignment backup="false" contextid="G3" original="false" macroguid="{0DCFA951-8742-4304-BA43-AD8EB3BD3DB9}" shiftstate="4"/>
+      <assignment backup="false" contextid="G4" original="false" macroguid="{F600A2B9-7477-4625-9ABA-94D8C1EA840A}" shiftstate="1"/>
+      <assignment backup="false" contextid="G4" original="false" macroguid="{F600A2B9-7477-4625-9ABA-94D8C1EA840A}" shiftstate="4"/>
+      <assignment backup="false" contextid="G5" original="false" macroguid="{CC41A64F-9B8C-4FD6-8491-69CDE545696D}" shiftstate="1"/>
+      <assignment backup="false" contextid="G5" original="false" macroguid="{CC41A64F-9B8C-4FD6-8491-69CDE545696D}" shiftstate="4"/>
+      <assignment backup="false" contextid="G6" original="false" macroguid="{6F7D6A25-C811-4442-87B7-212C23D8905E}" shiftstate="1"/>
+      <assignment backup="false" contextid="G6" original="false" macroguid="{6F7D6A25-C811-4442-87B7-212C23D8905E}" shiftstate="4"/>
+      <assignment backup="false" contextid="G7" original="false" macroguid="{0C2A3F47-F4EF-4031-9425-C91DAE1BCC1C}" shiftstate="1"/>
+      <assignment backup="false" contextid="G7" original="false" macroguid="{0C2A3F47-F4EF-4031-9425-C91DAE1BCC1C}" shiftstate="4"/>
+      <assignment backup="false" contextid="G8" original="false" macroguid="{75852E01-469E-48AA-A13C-8D4781270F42}" shiftstate="1"/>
+      <assignment backup="false" contextid="G8" original="false" macroguid="{75852E01-469E-48AA-A13C-8D4781270F42}" shiftstate="4"/>
+      <assignment backup="false" contextid="G9" original="false" macroguid="{34E605F3-AD1D-4300-AE2B-A1A893A7A6E3}" shiftstate="1"/>
+      <assignment backup="false" contextid="G9" original="false" macroguid="{34E605F3-AD1D-4300-AE2B-A1A893A7A6E3}" shiftstate="4"/>
+      <assignment backup="false" contextid="G10" original="false" macroguid="{983F02CC-8E61-472E-B9D4-3DD74E5B22CD}" shiftstate="1"/>
+      <assignment backup="false" contextid="G10" original="false" macroguid="{983F02CC-8E61-472E-B9D4-3DD74E5B22CD}" shiftstate="4"/>
+      <assignment backup="false" contextid="G11" original="false" macroguid="{8EC55C2C-7843-4217-9AAB-AF609A9A5DE2}" shiftstate="1"/>
+      <assignment backup="false" contextid="G11" original="false" macroguid="{8EC55C2C-7843-4217-9AAB-AF609A9A5DE2}" shiftstate="4"/>
+      <assignment backup="false" contextid="G12" original="false" macroguid="{336A6285-6FC8-47DC-8FD2-7C828BAFEFCE}" shiftstate="1"/>
+      <assignment backup="false" contextid="G12" original="false" macroguid="{336A6285-6FC8-47DC-8FD2-7C828BAFEFCE}" shiftstate="4"/>
+      <assignment backup="false" contextid="OSD_SCROLL_LOCK" original="false" macroguid="{9B929CDE-170F-4C2F-BA21-2515FA3EFDF7}" shiftstate="1"/>
+      <assignment backup="false" contextid="OSD_SCROLL_LOCK" original="false" macroguid="{9B929CDE-170F-4C2F-BA21-2515FA3EFDF7}" shiftstate="4"/>
+      <assignment backup="false" contextid="OSD_NUM_LOCK" original="false" macroguid="{0D12636B-5C1E-4A5A-B6AA-6FBEFF6E6C11}" shiftstate="1"/>
+      <assignment backup="false" contextid="OSD_NUM_LOCK" original="false" macroguid="{0D12636B-5C1E-4A5A-B6AA-6FBEFF6E6C11}" shiftstate="4"/>
+    </assignments>
+    <assignments devicecategory="Logitech.Gaming.LeftHandedController">
+      <assignment backup="true" contextid="G4" original="false" macroguid="{3E0A6AC0-4C8D-47AE-9EEE-96DFB96134D2}" shiftstate="1"/>
+      <assignment backup="false" contextid="G10" original="true" macroguid="{E17FD390-458B-4266-8665-B9FA3704435F}" shiftstate="1"/>
+      <assignment backup="true" contextid="G11" original="false" macroguid="{8148F734-10E3-4593-BAC6-4541F6FC7A3E}" shiftstate="1"/>
+      <assignment backup="false" contextid="G12" original="true" macroguid="{E9D141A2-C19C-4DFF-BF86-BCE25A0E43BE}" shiftstate="1"/>
+      <assignment backup="true" contextid="G6" original="false" macroguid="{15AAC495-6AF9-47B3-9BDE-1101127C760E}" shiftstate="1"/>
+      <assignment backup="true" contextid="G14" original="false" macroguid="{D511B4CB-2A3C-4BC7-9346-F9910599458D}" shiftstate="1"/>
+      <assignment backup="true" contextid="G20" original="false" macroguid="{B72295E3-B8AC-40C1-817B-660BF7B28692}" shiftstate="1"/>
+      <assignment backup="true" contextid="G15" original="false" macroguid="{D391403A-2347-47FC-AFE2-08F7647B71E4}" shiftstate="1"/>
+      <assignment backup="true" contextid="G22" original="false" macroguid="{DA549BEF-6198-4F57-A1B4-E35967C7C0AE}" shiftstate="1"/>
+      <assignment backup="true" contextid="G18" original="false" macroguid="{3719CC42-276C-4D72-B817-801CD105ADBE}" shiftstate="1"/>
+      <assignment backup="true" contextid="G16" original="false" macroguid="{4066EDD7-7CAE-4720-BF03-4C6CBAE166C6}" shiftstate="1"/>
+      <assignment backup="true" contextid="G3" original="false" macroguid="{8A69AECE-736A-4BD8-B22B-12A9B2C9F98F}" shiftstate="1"/>
+      <assignment backup="true" contextid="G5" original="false" macroguid="{0293D089-00B8-4ADB-83B1-F008A01A3279}" shiftstate="1"/>
+      <assignment backup="true" contextid="G17" original="false" macroguid="{84E7826B-2585-4C79-8617-84B6132F326E}" shiftstate="1"/>
+      <assignment backup="true" contextid="G13" original="false" macroguid="{9EF853F1-AF1F-4088-B351-A222DE6458B5}" shiftstate="1"/>
+      <assignment backup="true" contextid="G19" original="false" macroguid="{522D4FDD-72D3-4EC6-867C-1AB46EE95D8B}" shiftstate="1"/>
+      <assignment backup="true" contextid="G1" original="false" macroguid="{D590F8DE-4719-4B1A-A907-1C0F3C1AC6A1}" shiftstate="1"/>
+      <assignment backup="true" contextid="G7" original="false" macroguid="{306A1A51-3731-427D-B18B-43206EFFAF52}" shiftstate="1"/>
+      <assignment backup="true" contextid="G21" original="false" macroguid="{F90027A0-9152-42FA-97FF-D3B7B682E7D2}" shiftstate="1"/>
+      <assignment backup="false" contextid="G26" original="true" macroguid="{8AE557B2-4775-4BC2-9877-DD627CE43692}" shiftstate="1"/>
+      <assignment backup="false" contextid="G27" original="true" macroguid="{8AE557B2-4775-4BC2-9877-DD627CE43692}" shiftstate="1"/>
+      <assignment backup="false" contextid="G28" original="true" macroguid="{8AE557B2-4775-4BC2-9877-DD627CE43692}" shiftstate="1"/>
+      <assignment backup="false" contextid="G29" original="true" macroguid="{8AE557B2-4775-4BC2-9877-DD627CE43692}" shiftstate="1"/>
+      <assignment backup="true" contextid="G23" original="false" macroguid="{FE7FA0FA-1393-4CEF-B84A-300249AB379A}" shiftstate="1"/>
+      <assignment backup="true" contextid="G24" original="false" macroguid="{301B9029-7522-4347-AD3E-9AED20B0CABB}" shiftstate="1"/>
+      <assignment backup="true" contextid="G2" original="false" macroguid="{66F226DE-A302-4CD2-A425-B7FC8416C8AF}" shiftstate="1"/>
+      <assignment backup="true" contextid="G8" original="false" macroguid="{99E5A49B-FD6D-4214-8FE3-EDAF87CB5CAA}" shiftstate="1"/>
+      <assignment backup="true" contextid="G9" original="false" macroguid="{1912D4F3-EBA2-4FAE-81F9-9FA6D99FFC13}" shiftstate="1"/>
+    </assignments>
+    <assignments devicecategory="Logitech.Gaming.Mouse.C08B">
+      <assignment backup="false" contextid="Button1" original="false" macroguid="{5DAFA657-7E0B-4D37-9F7A-FA252ED551E6}" shiftstate="1"/>
+      <assignment backup="false" contextid="Button2" original="false" macroguid="{9D0F4485-F6CE-49AF-B3FB-328DBF996F1E}" shiftstate="1"/>
+      <assignment backup="false" contextid="Button3" original="false" macroguid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" shiftstate="1"/>
+      <assignment backup="false" contextid="Button1" original="false" macroguid="{5DAFA657-7E0B-4D37-9F7A-FA252ED551E6}" shiftstate="4"/>
+      <assignment backup="false" contextid="Button2" original="false" macroguid="{9D0F4485-F6CE-49AF-B3FB-328DBF996F1E}" shiftstate="4"/>
+      <assignment backup="false" contextid="Button3" original="false" macroguid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" shiftstate="4"/>
+      <assignment backup="false" contextid="Button4" original="false" macroguid="{A0D817F6-1D5D-483B-ADD0-2634CD93D42A}" shiftstate="4"/>
+      <assignment backup="false" contextid="Button5" original="false" macroguid="{8B13562D-60F2-460F-9588-8C84168C81BC}" shiftstate="4"/>
+      <assignment backup="false" contextid="Button6" original="false" macroguid="{A1FEC5BC-9A8A-49C5-B085-0E2EDCEF1F55}" shiftstate="4"/>
+      <assignment backup="false" contextid="Button7" original="false" macroguid="{12C9716B-4D7A-4F6F-AF20-A0369219119A}" shiftstate="4"/>
+      <assignment backup="false" contextid="Button8" original="false" macroguid="{68A1C0B2-2996-4992-9CC5-3285AC8E9740}" shiftstate="4"/>
+      <assignment backup="false" contextid="Button10" original="false" macroguid="{C241DB13-C060-4CC4-B27A-16CCB0C9F0F7}" shiftstate="4"/>
+      <assignment backup="false" contextid="Button11" original="false" macroguid="{610C3518-335B-4497-B9AC-605E52E450E9}" shiftstate="4"/>
+    </assignments>
+    <pointers>
+      <pointer devicemodel="Logitech.Gaming.Mouse.C08B">
+        <mode shiftstate="1">
+          <reportrate rate="1000"/>
+          <powermode value="2"/>
+          <dpitable shiftindex="0" defaultindex="1" syncxy="1">
+            <dpi enabled="1" x="1200" y="1200"/>
+            <dpi enabled="1" x="2400" y="2400"/>
+            <dpi enabled="1" x="3200" y="3200"/>
+            <dpi enabled="1" x="6400" y="6400"/>
+          </dpitable>
+          <movement speed="-1" acceleration="1"/>
+        </mode>
+      </pointer>
+    </pointers>
+    <backlight devicemodel="Logitech.Gaming.LeftHandedController.G13">
+      <mode color="#ffffff" shiftstate="1"/>
+      <mode color="#ffffff" shiftstate="2"/>
+      <mode color="#ffffff" shiftstate="3"/>
+    </backlight>
+    <backlight devicemodel="Logitech.Gaming.Keyboard.C33C">
+      <lightingsetting><![CDATA[{"PerKey":{"0x1":{"0x10":"#00a9e0","0x11":"#000000","0x12":"#000000","0x13":"#000000","0x14":"#8000ff","0x15":"#ff5000","0x16":"#8000ff","0x17":"#00a9e0","0x18":"#000000","0x19":"#00a9e0","0x1a":"#8000ff","0x1b":"#ff5000","0x1c":"#000000","0x1d":"#8000ff","0x1e":"#ff5000","0x1f":"#ff5000","0x20":"#ff5000","0x21":"#ff5000","0x22":"#ff5000","0x23":"#000000","0x24":"#ff5000","0x25":"#ff5000","0x26":"#ff5000","0x27":"#ff5000","0x28":"#000000","0x29":"#00a9e0","0x2a":"#000000","0x2b":"#000000","0x2c":"#8000ff","0x2d":"#000000","0x2e":"#8000ff","0x2f":"#000000","0x30":"#000000","0x31":"#000000","0x32":"#00cdff","0x33":"#000000","0x34":"#000000","0x35":"#000000","0x36":"#000000","0x37":"#000000","0x38":"#000000","0x39":"#000000","0x3a":"#000000","0x3b":"#000000","0x3c":"#000000","0x3d":"#000000","0x3e":"#000000","0x3f":"#000000","0x4":"#8000ff","0x40":"#000000","0x41":"#000000","0x42":"#000000","0x43":"#000000","0x44":"#000000","0x45":"#000000","0x46":"#000000","0x47":"#000000","0x48":"#000000","0x49":"#000000","0x4a":"#000000","0x4b":"#00a9e0","0x4c":"#000000","0x4d":"#000000","0x4e":"#00a9e0","0x4f":"#000000","0x5":"#ff5000","0x50":"#000000","0x51":"#000000","0x52":"#000000","0x53":"#000000","0x54":"#000000","0x55":"#000000","0x56":"#000000","0x57":"#000000","0x58":"#000000","0x59":"#000000","0x5a":"#000000","0x5b":"#000000","0x5c":"#000000","0x5d":"#000000","0x5e":"#000000","0x5f":"#000000","0x6":"#8000ff","0x60":"#000000","0x61":"#000000","0x62":"#000000","0x63":"#000000","0x64":"#00cdff","0x65":"#000000","0x7":"#8000ff","0x8":"#8000ff","0x87":"#00cdff","0x88":"#00cdff","0x89":"#00cdff","0x8a":"#00cdff","0x8b":"#00cdff","0x9":"#ff5000","0xa":"#ff5000","0xb":"#000000","0xc":"#00a9e0","0xd":"#000000","0xe":"#000000","0xe0":"#8000ff","0xe1":"#8000ff","0xe2":"#00a9e0","0xe3":"#000000","0xe4":"#000000","0xe5":"#000000","0xe6":"#000000","0xe7":"#000000","0xf":"#000000"},"0x10":{"0x1":"#00a9e0","0x2":"#00a9e0"},"0x4":{"0x1":"#000000","0x2":"#000000","0x3":"#000000","0x4":"#000000","0x5":"#000000","0x6":"#000000","0x7":"#000000","0x8":"#000000","0x9":"#000000"}},"Zone":{"selectedZone":"{a829485a-b821-47cb-a193-0046ee89e43d}","zones":{"{02f9042e-b520-4699-a1e6-fa9b941d00d1}":{"color":"#8000ff","keys":[{"id":"0x14","type":"0x1"},{"id":"0xe0","type":"0x1"},{"id":"0x2c","type":"0x1"},{"id":"0x16","type":"0x1"},{"id":"0x1d","type":"0x1"},{"id":"0x8","type":"0x1"},{"id":"0x6","type":"0x1"},{"id":"0x4","type":"0x1"},{"id":"0x7","type":"0x1"},{"id":"0x2e","type":"0x1"},{"id":"0xe1","type":"0x1"},{"id":"0x1a","type":"0x1"}],"name":"Movement"},"{7318BB8E-9A17-DEAD-9A4C-21F2EE342DC1}":{"color":"#00a9e0","keys":[{"id":"0x1","type":"0x10"},{"id":"0x2","type":"0x10"}],"name":"Logo"},"{912bf9d1-a609-4bec-9d0f-57919f8df2a3}":{"color":"#00a9e0","keys":[{"id":"0xc","type":"0x1"},{"id":"0x19","type":"0x1"},{"id":"0xe2","type":"0x1"},{"id":"0x29","type":"0x1"},{"id":"0x4e","type":"0x1"},{"id":"0x17","type":"0x1"},{"id":"0x4b","type":"0x1"},{"id":"0x10","type":"0x1"}],"name":"Function"},"{a829485a-b821-47cb-a193-0046ee89e43d}":{"color":"#ff5000","keys":[{"id":"0x22","type":"0x1"},{"id":"0x9","type":"0x1"},{"id":"0x1b","type":"0x1"},{"id":"0x1e","type":"0x1"},{"id":"0x26","type":"0x1"},{"id":"0x1f","type":"0x1"},{"id":"0x27","type":"0x1"},{"id":"0x25","type":"0x1"},{"id":"0x20","type":"0x1"},{"id":"0xa","type":"0x1"},{"id":"0x24","type":"0x1"},{"id":"0x5","type":"0x1"},{"id":"0x21","type":"0x1"},{"id":"0x15","type":"0x1"}],"name":"Action"}}},"current":"PerKey","perProfile":true}]]></lightingsetting>
+    </backlight>
+    <backlight devicemodel="Logitech.Gaming.Keyboard.G410">
+      <lightingsetting><![CDATA[{"PerKey":{"0x1":{"0x10":"#00a9e0","0x11":"#000000","0x12":"#000000","0x13":"#000000","0x14":"#8000ff","0x15":"#ff5000","0x16":"#8000ff","0x17":"#00a9e0","0x18":"#000000","0x19":"#00a9e0","0x1a":"#8000ff","0x1b":"#ff5000","0x1c":"#000000","0x1d":"#8000ff","0x1e":"#ff5000","0x1f":"#ff5000","0x20":"#ff5000","0x21":"#ff5000","0x22":"#ff5000","0x23":"#000000","0x24":"#ff5000","0x25":"#ff5000","0x26":"#ff5000","0x27":"#ff5000","0x28":"#000000","0x29":"#00a9e0","0x2a":"#000000","0x2b":"#000000","0x2c":"#8000ff","0x2d":"#000000","0x2e":"#8000ff","0x2f":"#000000","0x30":"#000000","0x31":"#000000","0x32":"#00cdff","0x33":"#000000","0x34":"#000000","0x35":"#000000","0x36":"#000000","0x37":"#000000","0x38":"#000000","0x39":"#000000","0x3a":"#000000","0x3b":"#000000","0x3c":"#000000","0x3d":"#000000","0x3e":"#000000","0x3f":"#000000","0x4":"#8000ff","0x40":"#000000","0x41":"#000000","0x42":"#000000","0x43":"#000000","0x44":"#000000","0x45":"#000000","0x46":"#000000","0x47":"#000000","0x48":"#000000","0x49":"#000000","0x4a":"#000000","0x4b":"#00a9e0","0x4c":"#000000","0x4d":"#000000","0x4e":"#00a9e0","0x4f":"#000000","0x5":"#ff5000","0x50":"#000000","0x51":"#000000","0x52":"#000000","0x53":"#000000","0x54":"#000000","0x55":"#000000","0x56":"#000000","0x57":"#000000","0x58":"#000000","0x59":"#000000","0x5a":"#000000","0x5b":"#000000","0x5c":"#000000","0x5d":"#000000","0x5e":"#000000","0x5f":"#000000","0x6":"#8000ff","0x60":"#000000","0x61":"#000000","0x62":"#000000","0x63":"#000000","0x64":"#00cdff","0x65":"#000000","0x7":"#8000ff","0x8":"#8000ff","0x87":"#00cdff","0x88":"#00cdff","0x89":"#00cdff","0x8a":"#00cdff","0x8b":"#00cdff","0x9":"#ff5000","0xa":"#ff5000","0xb":"#000000","0xc":"#00a9e0","0xd":"#000000","0xe":"#000000","0xe0":"#8000ff","0xe1":"#8000ff","0xe2":"#00a9e0","0xe3":"#000000","0xe4":"#000000","0xe5":"#000000","0xe6":"#000000","0xe7":"#000000","0xf":"#000000"},"0x10":{"0x1":"#00a9e0","0x2":"#00a9e0"},"0x4":{"0x1":"#000000","0x2":"#000000","0x3":"#000000","0x4":"#000000","0x5":"#000000","0x6":"#000000","0x7":"#000000","0x8":"#000000","0x9":"#000000"}},"Zone":{"selectedZone":"{a829485a-b821-47cb-a193-0046ee89e43d}","zones":{"{02f9042e-b520-4699-a1e6-fa9b941d00d1}":{"color":"#8000ff","keys":[{"id":"0x14","type":"0x1"},{"id":"0xe0","type":"0x1"},{"id":"0x2c","type":"0x1"},{"id":"0x16","type":"0x1"},{"id":"0x1d","type":"0x1"},{"id":"0x8","type":"0x1"},{"id":"0x6","type":"0x1"},{"id":"0x4","type":"0x1"},{"id":"0x7","type":"0x1"},{"id":"0x2e","type":"0x1"},{"id":"0xe1","type":"0x1"},{"id":"0x1a","type":"0x1"}],"name":"Movement"},"{7318BB8E-9A17-DEAD-9A4C-21F2EE342DC1}":{"color":"#00a9e0","keys":[{"id":"0x1","type":"0x10"},{"id":"0x2","type":"0x10"}],"name":"Logo"},"{912bf9d1-a609-4bec-9d0f-57919f8df2a3}":{"color":"#00a9e0","keys":[{"id":"0xc","type":"0x1"},{"id":"0x19","type":"0x1"},{"id":"0xe2","type":"0x1"},{"id":"0x29","type":"0x1"},{"id":"0x4e","type":"0x1"},{"id":"0x17","type":"0x1"},{"id":"0x4b","type":"0x1"},{"id":"0x10","type":"0x1"}],"name":"Function"},"{a829485a-b821-47cb-a193-0046ee89e43d}":{"color":"#ff5000","keys":[{"id":"0x22","type":"0x1"},{"id":"0x9","type":"0x1"},{"id":"0x1b","type":"0x1"},{"id":"0x1e","type":"0x1"},{"id":"0x26","type":"0x1"},{"id":"0x1f","type":"0x1"},{"id":"0x27","type":"0x1"},{"id":"0x25","type":"0x1"},{"id":"0x20","type":"0x1"},{"id":"0xa","type":"0x1"},{"id":"0x24","type":"0x1"},{"id":"0x5","type":"0x1"},{"id":"0x21","type":"0x1"},{"id":"0x15","type":"0x1"}],"name":"Action"}}},"current":"PerKey","perProfile":true}]]></lightingsetting>
+    </backlight>
+    <backlight devicemodel="Logitech.Gaming.Keyboard.G810">
+      <lightingsetting><![CDATA[{"PerKey":{"0x1":{"0x10":"#00a9e0","0x11":"#000000","0x12":"#000000","0x13":"#000000","0x14":"#8000ff","0x15":"#ff5000","0x16":"#8000ff","0x17":"#00a9e0","0x18":"#000000","0x19":"#00a9e0","0x1a":"#8000ff","0x1b":"#ff5000","0x1c":"#000000","0x1d":"#8000ff","0x1e":"#ff5000","0x1f":"#ff5000","0x20":"#ff5000","0x21":"#ff5000","0x22":"#ff5000","0x23":"#000000","0x24":"#ff5000","0x25":"#ff5000","0x26":"#ff5000","0x27":"#ff5000","0x28":"#000000","0x29":"#00a9e0","0x2a":"#000000","0x2b":"#000000","0x2c":"#8000ff","0x2d":"#000000","0x2e":"#8000ff","0x2f":"#000000","0x30":"#000000","0x31":"#000000","0x32":"#00cdff","0x33":"#000000","0x34":"#000000","0x35":"#000000","0x36":"#000000","0x37":"#000000","0x38":"#000000","0x39":"#000000","0x3a":"#000000","0x3b":"#000000","0x3c":"#000000","0x3d":"#000000","0x3e":"#000000","0x3f":"#000000","0x4":"#8000ff","0x40":"#000000","0x41":"#000000","0x42":"#000000","0x43":"#000000","0x44":"#000000","0x45":"#000000","0x46":"#000000","0x47":"#000000","0x48":"#000000","0x49":"#000000","0x4a":"#000000","0x4b":"#00a9e0","0x4c":"#000000","0x4d":"#000000","0x4e":"#00a9e0","0x4f":"#000000","0x5":"#ff5000","0x50":"#000000","0x51":"#000000","0x52":"#000000","0x53":"#000000","0x54":"#000000","0x55":"#000000","0x56":"#000000","0x57":"#000000","0x58":"#000000","0x59":"#000000","0x5a":"#000000","0x5b":"#000000","0x5c":"#000000","0x5d":"#000000","0x5e":"#000000","0x5f":"#000000","0x6":"#8000ff","0x60":"#000000","0x61":"#000000","0x62":"#000000","0x63":"#000000","0x64":"#00cdff","0x65":"#000000","0x7":"#8000ff","0x8":"#8000ff","0x87":"#00cdff","0x88":"#00cdff","0x89":"#00cdff","0x8a":"#00cdff","0x8b":"#00cdff","0x9":"#ff5000","0xa":"#ff5000","0xb":"#000000","0xc":"#00a9e0","0xd":"#000000","0xe":"#000000","0xe0":"#8000ff","0xe1":"#8000ff","0xe2":"#00a9e0","0xe3":"#000000","0xe4":"#000000","0xe5":"#000000","0xe6":"#000000","0xe7":"#000000","0xf":"#000000"},"0x10":{"0x1":"#00a9e0","0x2":"#00a9e0"},"0x4":{"0x1":"#000000","0x2":"#000000","0x3":"#000000","0x4":"#000000","0x5":"#000000","0x6":"#000000","0x7":"#000000","0x8":"#000000","0x9":"#000000"}},"Zone":{"selectedZone":"{a829485a-b821-47cb-a193-0046ee89e43d}","zones":{"{02f9042e-b520-4699-a1e6-fa9b941d00d1}":{"color":"#8000ff","keys":[{"id":"0x14","type":"0x1"},{"id":"0xe0","type":"0x1"},{"id":"0x2c","type":"0x1"},{"id":"0x16","type":"0x1"},{"id":"0x1d","type":"0x1"},{"id":"0x8","type":"0x1"},{"id":"0x6","type":"0x1"},{"id":"0x4","type":"0x1"},{"id":"0x7","type":"0x1"},{"id":"0x2e","type":"0x1"},{"id":"0xe1","type":"0x1"},{"id":"0x1a","type":"0x1"}],"name":"Movement"},"{7318BB8E-9A17-DEAD-9A4C-21F2EE342DC1}":{"color":"#00a9e0","keys":[{"id":"0x1","type":"0x10"},{"id":"0x2","type":"0x10"}],"name":"Logo"},"{912bf9d1-a609-4bec-9d0f-57919f8df2a3}":{"color":"#00a9e0","keys":[{"id":"0xc","type":"0x1"},{"id":"0x19","type":"0x1"},{"id":"0xe2","type":"0x1"},{"id":"0x29","type":"0x1"},{"id":"0x4e","type":"0x1"},{"id":"0x17","type":"0x1"},{"id":"0x4b","type":"0x1"},{"id":"0x10","type":"0x1"}],"name":"Function"},"{a829485a-b821-47cb-a193-0046ee89e43d}":{"color":"#ff5000","keys":[{"id":"0x22","type":"0x1"},{"id":"0x9","type":"0x1"},{"id":"0x1b","type":"0x1"},{"id":"0x1e","type":"0x1"},{"id":"0x26","type":"0x1"},{"id":"0x1f","type":"0x1"},{"id":"0x27","type":"0x1"},{"id":"0x25","type":"0x1"},{"id":"0x20","type":"0x1"},{"id":"0xa","type":"0x1"},{"id":"0x24","type":"0x1"},{"id":"0x5","type":"0x1"},{"id":"0x21","type":"0x1"},{"id":"0x15","type":"0x1"}],"name":"Action"}}},"current":"PerKey","perProfile":true}]]></lightingsetting>
+    </backlight>
+    <backlight devicemodel="Logitech.Gaming.Keyboard.G910">
+      <lightingsetting><![CDATA[{"PerKey":{"0x1":{"0x10":"#00a9e0","0x11":"#000000","0x12":"#000000","0x13":"#000000","0x14":"#8000ff","0x15":"#ff5000","0x16":"#8000ff","0x17":"#00a9e0","0x18":"#000000","0x19":"#00a9e0","0x1a":"#8000ff","0x1b":"#ff5000","0x1c":"#000000","0x1d":"#8000ff","0x1e":"#ff5000","0x1f":"#ff5000","0x20":"#ff5000","0x21":"#ff5000","0x22":"#ff5000","0x23":"#000000","0x24":"#ff5000","0x25":"#ff5000","0x26":"#ff5000","0x27":"#ff5000","0x28":"#000000","0x29":"#00a9e0","0x2a":"#000000","0x2b":"#000000","0x2c":"#8000ff","0x2d":"#000000","0x2e":"#8000ff","0x2f":"#000000","0x30":"#000000","0x31":"#000000","0x32":"#00cdff","0x33":"#000000","0x34":"#000000","0x35":"#000000","0x36":"#000000","0x37":"#000000","0x38":"#000000","0x39":"#000000","0x3a":"#000000","0x3b":"#000000","0x3c":"#000000","0x3d":"#000000","0x3e":"#000000","0x3f":"#000000","0x4":"#8000ff","0x40":"#000000","0x41":"#000000","0x42":"#000000","0x43":"#000000","0x44":"#000000","0x45":"#000000","0x46":"#000000","0x47":"#000000","0x48":"#000000","0x49":"#000000","0x4a":"#000000","0x4b":"#00a9e0","0x4c":"#000000","0x4d":"#000000","0x4e":"#00a9e0","0x4f":"#000000","0x5":"#ff5000","0x50":"#000000","0x51":"#000000","0x52":"#000000","0x53":"#000000","0x54":"#000000","0x55":"#000000","0x56":"#000000","0x57":"#000000","0x58":"#000000","0x59":"#000000","0x5a":"#000000","0x5b":"#000000","0x5c":"#000000","0x5d":"#000000","0x5e":"#000000","0x5f":"#000000","0x6":"#8000ff","0x60":"#000000","0x61":"#000000","0x62":"#000000","0x63":"#000000","0x64":"#00cdff","0x65":"#000000","0x7":"#8000ff","0x8":"#8000ff","0x87":"#00cdff","0x88":"#00cdff","0x89":"#00cdff","0x8a":"#00cdff","0x8b":"#00cdff","0x9":"#ff5000","0xa":"#ff5000","0xb":"#000000","0xc":"#00a9e0","0xd":"#000000","0xe":"#000000","0xe0":"#8000ff","0xe1":"#8000ff","0xe2":"#00a9e0","0xe3":"#000000","0xe4":"#000000","0xe5":"#000000","0xe6":"#000000","0xe7":"#000000","0xf":"#000000"},"0x10":{"0x1":"#00a9e0","0x2":"#00a9e0"},"0x4":{"0x1":"#000000","0x2":"#000000","0x3":"#000000","0x4":"#000000","0x5":"#000000","0x6":"#000000","0x7":"#000000","0x8":"#000000","0x9":"#000000"}},"Zone":{"selectedZone":"{a829485a-b821-47cb-a193-0046ee89e43d}","zones":{"{02f9042e-b520-4699-a1e6-fa9b941d00d1}":{"color":"#8000ff","keys":[{"id":"0x14","type":"0x1"},{"id":"0xe0","type":"0x1"},{"id":"0x2c","type":"0x1"},{"id":"0x16","type":"0x1"},{"id":"0x1d","type":"0x1"},{"id":"0x8","type":"0x1"},{"id":"0x6","type":"0x1"},{"id":"0x4","type":"0x1"},{"id":"0x7","type":"0x1"},{"id":"0x2e","type":"0x1"},{"id":"0xe1","type":"0x1"},{"id":"0x1a","type":"0x1"}],"name":"Movement"},"{7318BB8E-9A17-DEAD-9A4C-21F2EE342DC1}":{"color":"#00a9e0","keys":[{"id":"0x1","type":"0x10"},{"id":"0x2","type":"0x10"}],"name":"Logo"},"{912bf9d1-a609-4bec-9d0f-57919f8df2a3}":{"color":"#00a9e0","keys":[{"id":"0xc","type":"0x1"},{"id":"0x19","type":"0x1"},{"id":"0xe2","type":"0x1"},{"id":"0x29","type":"0x1"},{"id":"0x4e","type":"0x1"},{"id":"0x17","type":"0x1"},{"id":"0x4b","type":"0x1"},{"id":"0x10","type":"0x1"}],"name":"Function"},"{a829485a-b821-47cb-a193-0046ee89e43d}":{"color":"#ff5000","keys":[{"id":"0x22","type":"0x1"},{"id":"0x9","type":"0x1"},{"id":"0x1b","type":"0x1"},{"id":"0x1e","type":"0x1"},{"id":"0x26","type":"0x1"},{"id":"0x1f","type":"0x1"},{"id":"0x27","type":"0x1"},{"id":"0x25","type":"0x1"},{"id":"0x20","type":"0x1"},{"id":"0xa","type":"0x1"},{"id":"0x24","type":"0x1"},{"id":"0x5","type":"0x1"},{"id":"0x21","type":"0x1"},{"id":"0x15","type":"0x1"}],"name":"Action"}}},"current":"PerKey","perProfile":true}]]></lightingsetting>
+    </backlight>
+    <backlight devicemodel="Logitech.Gaming.Keyboard.Pro.C339">
+      <lightingsetting><![CDATA[{"PerKey":{"0x1":{"0x10":"#00a9e0","0x11":"#000000","0x12":"#000000","0x13":"#000000","0x14":"#8000ff","0x15":"#ff5000","0x16":"#8000ff","0x17":"#00a9e0","0x18":"#000000","0x19":"#00a9e0","0x1a":"#8000ff","0x1b":"#ff5000","0x1c":"#000000","0x1d":"#8000ff","0x1e":"#ff5000","0x1f":"#ff5000","0x20":"#ff5000","0x21":"#ff5000","0x22":"#ff5000","0x23":"#000000","0x24":"#ff5000","0x25":"#ff5000","0x26":"#ff5000","0x27":"#ff5000","0x28":"#000000","0x29":"#00a9e0","0x2a":"#000000","0x2b":"#000000","0x2c":"#8000ff","0x2d":"#000000","0x2e":"#8000ff","0x2f":"#000000","0x30":"#000000","0x31":"#000000","0x32":"#00cdff","0x33":"#000000","0x34":"#000000","0x35":"#000000","0x36":"#000000","0x37":"#000000","0x38":"#000000","0x39":"#000000","0x3a":"#000000","0x3b":"#000000","0x3c":"#000000","0x3d":"#000000","0x3e":"#000000","0x3f":"#000000","0x4":"#8000ff","0x40":"#000000","0x41":"#000000","0x42":"#000000","0x43":"#000000","0x44":"#000000","0x45":"#000000","0x46":"#000000","0x47":"#000000","0x48":"#000000","0x49":"#000000","0x4a":"#000000","0x4b":"#00a9e0","0x4c":"#000000","0x4d":"#000000","0x4e":"#00a9e0","0x4f":"#000000","0x5":"#ff5000","0x50":"#000000","0x51":"#000000","0x52":"#000000","0x53":"#000000","0x54":"#000000","0x55":"#000000","0x56":"#000000","0x57":"#000000","0x58":"#000000","0x59":"#000000","0x5a":"#000000","0x5b":"#000000","0x5c":"#000000","0x5d":"#000000","0x5e":"#000000","0x5f":"#000000","0x6":"#8000ff","0x60":"#000000","0x61":"#000000","0x62":"#000000","0x63":"#000000","0x64":"#00cdff","0x65":"#000000","0x7":"#8000ff","0x8":"#8000ff","0x87":"#00cdff","0x88":"#00cdff","0x89":"#00cdff","0x8a":"#00cdff","0x8b":"#00cdff","0x9":"#ff5000","0xa":"#ff5000","0xb":"#000000","0xc":"#00a9e0","0xd":"#000000","0xe":"#000000","0xe0":"#8000ff","0xe1":"#8000ff","0xe2":"#00a9e0","0xe3":"#000000","0xe4":"#000000","0xe5":"#000000","0xe6":"#000000","0xe7":"#000000","0xf":"#000000"},"0x10":{"0x1":"#00a9e0","0x2":"#00a9e0"},"0x4":{"0x1":"#000000","0x2":"#000000","0x3":"#000000","0x4":"#000000","0x5":"#000000","0x6":"#000000","0x7":"#000000","0x8":"#000000","0x9":"#000000"}},"Zone":{"selectedZone":"{a829485a-b821-47cb-a193-0046ee89e43d}","zones":{"{02f9042e-b520-4699-a1e6-fa9b941d00d1}":{"color":"#8000ff","keys":[{"id":"0x14","type":"0x1"},{"id":"0xe0","type":"0x1"},{"id":"0x2c","type":"0x1"},{"id":"0x16","type":"0x1"},{"id":"0x1d","type":"0x1"},{"id":"0x8","type":"0x1"},{"id":"0x6","type":"0x1"},{"id":"0x4","type":"0x1"},{"id":"0x7","type":"0x1"},{"id":"0x2e","type":"0x1"},{"id":"0xe1","type":"0x1"},{"id":"0x1a","type":"0x1"}],"name":"Movement"},"{7318BB8E-9A17-DEAD-9A4C-21F2EE342DC1}":{"color":"#00a9e0","keys":[{"id":"0x1","type":"0x10"},{"id":"0x2","type":"0x10"}],"name":"Logo"},"{912bf9d1-a609-4bec-9d0f-57919f8df2a3}":{"color":"#00a9e0","keys":[{"id":"0xc","type":"0x1"},{"id":"0x19","type":"0x1"},{"id":"0xe2","type":"0x1"},{"id":"0x29","type":"0x1"},{"id":"0x4e","type":"0x1"},{"id":"0x17","type":"0x1"},{"id":"0x4b","type":"0x1"},{"id":"0x10","type":"0x1"}],"name":"Function"},"{a829485a-b821-47cb-a193-0046ee89e43d}":{"color":"#ff5000","keys":[{"id":"0x22","type":"0x1"},{"id":"0x9","type":"0x1"},{"id":"0x1b","type":"0x1"},{"id":"0x1e","type":"0x1"},{"id":"0x26","type":"0x1"},{"id":"0x1f","type":"0x1"},{"id":"0x27","type":"0x1"},{"id":"0x25","type":"0x1"},{"id":"0x20","type":"0x1"},{"id":"0xa","type":"0x1"},{"id":"0x24","type":"0x1"},{"id":"0x5","type":"0x1"},{"id":"0x21","type":"0x1"},{"id":"0x15","type":"0x1"}],"name":"Action"}}},"current":"PerKey","perProfile":true}]]></lightingsetting>
+    </backlight>
+    <script>--[[ Script Start ]]
+
+------------------------------------------ [[ 玩家自定义 ]] ------------------------------------------
+-- 推荐边查阅帮助文档，边对下列内容进行修改。
+-- 参考地址: https://github.com/kiccer/Soldier76#%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8
+-- It is recommended to review the help documents and modify the following contents.
+userInfo = {
+
+	-- 是否输出调试信息，关闭后可以减小 CPU 计算压力。建议调试时开启，调试完毕后关闭。(1 - 开启 | 0 - 关闭)
+	-- Whether to output debugging information, the CPU calculation pressure can be reduced after close.
+	-- It is recommended to turn it on during debugging and turn it off after debugging.
+	-- (0 - Disable | 1 - Enable)
+	debug = 1,
+
+	-- CPU 负载等级，建议输入 1 ~ 30 之间的数字，不能小于 1 。值越小，压枪效果越好，值越大，帧数越高。(过分掉帧会直接影响压枪效果，请在保证帧数的情况下减小该值)
+	-- CPU load level, It is recommended to enter a number between 1 and 30, cannot be less than 1.
+	-- The lower the value is, the better the effect is, the higher the value, the higher the number of frames.
+	-- (excessive frame dropping will directly affect the gun pressing effect, please reduce the value while ensuring the frame number)
+	cpuLoad = 1,
+
+	-- 灵敏度调整 | Sensitivity adjustment
+	sensitivity = {
+		-- 开镜 | sighting mirror
+		ADS = 64.6,
+		-- 腰射 | take aim
+		Aim = 0.55,
+		-- 二倍 | twice scope
+		scopeX2 = 1.3,
+		-- 三倍 | trebling scope
+		scopeX3 = 1.3,
+		-- 四倍 | quadruple scope
+		scopeX4 = 3.9,
+		-- 六倍 | sixfold scope
+		scopeX6 = 2.3,
+	},
+
+	-- 自动腰射，不使用自动腰射留空，使用则设置为键盘上按键
+	-- Auto aim, leave blank without auto aim, set as the key on the keyboard when using.
+	autoPressAimKey = "",
+
+	-- 启动控制 (capslock - 使用大写锁定键控制 | numlock - 小键盘锁定键控制 | G_bind - 使用指令控制) | Start up control
+	startControl = "G_bind",
+
+	-- 瞄准设置 (default - 使用游戏默认设置 | recommend - 使用脚本推荐设置 | custom - 自定义设置 | ctrlmode - 下蹲模式) | Aiming setting
+	aimingSettings = "recommend",
+
+	-- 当 aimingSettings = "custom" ，需要在此处设置自定义判断条件，通常配合 IsMouseButtonPressed 或 IsModifierPressed 使用，使用方法请查阅 G-series Lua API 参考文档.docx
+	customAimingSettings = {
+		-- 开镜判断
+		ADS = function ()
+			return false -- 判断条件，返回值为布尔型
+		end,
+		-- 腰射判断
+		Aim = function ()
+			return false -- 判断条件，返回值为布尔型
+		end,
+	},
+
+	-- 支持的枪械，排列顺序即是配置顺序，可以自行调整。
+	-- 模式：0 - 不启用 | 1 - 启用 | 2 - 开启连点
+	-- 系数：枪械自身系数，基于 ADS 进行调整 (ADS为全局系数，此处为自身系数)
+	-- 下蹲系数：下蹲时的系数，基于 ADS 和 自身系数
+	canUse = {
+		[".45"] = {
+			-- 枪械             模式         系数        下蹲系数
+			{ "UMP45",          1,          1,          0.8 }, -- 基础镜 + 扩容，Bizon (基础镜即可)，Vector (补偿 + 基础镜 + 扩容) | Reddot + Mag，Bizon (Reddot)，Vector (Komp + Reddot + Mag)
+			{ "Tommy Gun",      1,          1,          0.8 }, -- 扩容 | Mag
+		},
+			-- 枪械             模式         系数        下蹲系数
+		["9mm"] = {
+			{ "Vector",         1,          1,          0.8 }, -- 基础镜 + 扩容 | Reddot + Mag
+			{ "Micro UZI",      1,          1,          0.8 }, -- 扩容 | Mag
+		},
+		["5.56"] = {
+			-- 枪械             模式         系数        下蹲系数
+			{ "M416",           1,          1,          0.8 }, -- 补偿 + 基础镜 + 直角 + 枪托 + 扩容 | Komp + Reddot + Triangular grip + Gunstock + Mag
+			{ "SCAR-L",         1,          1,          0.8 }, -- 补偿 + 基础镜 + 直角 + 扩容 | Komp + Reddot + Triangular grip + Mag
+			{ "QBZ",            1,          1,          0.8 }, -- 补偿 + 基础镜 + 直角 + 扩容 | Komp + Reddot + Triangular grip + Mag
+			{ "G36C",           1,          1,          0.8 }, -- 补偿 + 基础镜 + 直角 + 扩容 | Komp + Reddot + Triangular grip + Mag
+			{ "M16A4",          2,          1,          0.8 }, -- 补偿 + 基础镜 + 枪托 + 扩容 | Komp + Reddot + Gunstock + Mag
+		},
+		["7.62"] = {
+			-- 枪械             模式         系数        下蹲系数
+			{ "AKM",            1,          1,          0.8 }, -- 补偿 + 基础镜 + 扩容 | Komp + Reddot + Mag
+			{ "Beryl M762",     1,          1,          0.8 }, -- 补偿 + 基础镜 + 直角 + 扩容 | Komp + Reddot + Triangular grip + Mag
+			{ "DP-28",          0,          1,          0.8 }, -- 基础镜 | Reddot
+		},
+	},
+
+	-- G键自定义绑定，多余的组合键可以删除
+	-- 可绑定指令请参考: https://github.com/kiccer/Soldier76#%E6%8C%87%E4%BB%A4%E5%88%97%E8%A1%A8
+	-- 指令绑定演示参考: https://github.com/kiccer/Soldier76#g_bind-%E6%8C%87%E4%BB%A4%E7%BB%91%E5%AE%9A%E6%BC%94%E7%A4%BA
+	G_bind = {
+		-- G
+		["G3"] = "",
+		["G4"] = "",
+		["G5"] = "",
+		["G6"] = "",
+		["G7"] = "",
+		["G8"] = "",
+		["G9"] = "",
+		["G10"] = "",
+		["G11"] = "",
+		-- lalt + G
+		["lalt + G3"] = "",
+		["lalt + G4"] = "",
+		["lalt + G5"] = "",
+		["lalt + G6"] = "",
+		["lalt + G7"] = "",
+		["lalt + G8"] = "",
+		["lalt + G9"] = "",
+		["lalt + G10"] = "",
+		["lalt + G11"] = "",
+		-- lctrl + G
+		["lctrl + G3"] = "",
+		["lctrl + G4"] = "",
+		["lctrl + G5"] = "",
+		["lctrl + G6"] = "",
+		["lctrl + G7"] = "",
+		["lctrl + G8"] = "",
+		["lctrl + G9"] = "",
+		["lctrl + G10"] = "",
+		["lctrl + G11"] = "",
+		-- lshift + G
+		["lshift + G3"] = "",
+		["lshift + G4"] = "",
+		["lshift + G5"] = "",
+		["lshift + G6"] = "fast_pickup",
+		["lshift + G7"] = "",
+		["lshift + G8"] = "",
+		["lshift + G9"] = "",
+		["lshift + G10"] = "",
+		["lshift + G11"] = "fast_lick_box",
+		-- ralt + G
+		["ralt + G3"] = "",
+		["ralt + G4"] = "",
+		["ralt + G5"] = "",
+		["ralt + G6"] = "",
+		["ralt + G7"] = "",
+		["ralt + G8"] = "",
+		["ralt + G9"] = "",
+		["ralt + G10"] = "",
+		["ralt + G11"] = "",
+		-- rctrl + G
+		["rctrl + G3"] = "",
+		["rctrl + G4"] = "",
+		["rctrl + G5"] = "",
+		["rctrl + G6"] = "",
+		["rctrl + G7"] = "",
+		["rctrl + G8"] = "",
+		["rctrl + G9"] = "",
+		["rctrl + G10"] = "",
+		["rctrl + G11"] = "",
+		-- rshift + G
+		["rshift + G3"] = "",
+		["rshift + G4"] = "",
+		["rshift + G5"] = "",
+		["rshift + G6"] = "fast_discard",
+		["rshift + G7"] = "",
+		["rshift + G8"] = "",
+		["rshift + G9"] = "",
+		["rshift + G10"] = "",
+		["rshift + G11"] = "",
+		-- 非鼠标G键，可以使键盘或者耳机上的G键，默认使用键盘G键，请确保你使用的是可编程的罗技键盘 | F1~12 (Non-mouse G-key)
+		["F1"] = "",
+		["F2"] = "",
+		["F3"] = "",
+		["F4"] = "",
+		["F5"] = "",
+		["F6"] = "",
+		["F7"] = "",
+		["F8"] = "",
+		["F9"] = "",
+		["F10"] = "",
+		["F11"] = "",
+		["F12"] = "",
+	},
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------- [[ 以下是脚本核心代码，非专业人士请勿改动 ]] -----------------------------
+----------------------------- [[ 以下是脚本核心代码，非专业人士请勿改动 ]] -----------------------------
+----------------------------- [[ 以下是脚本核心代码，非专业人士请勿改动 ]] -----------------------------
+
+-- internal configuration
+pubg = {
+	gun = {
+		[".45"] = {},
+		["9mm"] = {},
+		["5.56"] = {},
+		["7.62"] = {},
+	}, -- 枪械库
+	gunOptions = {
+		[".45"] = {},
+		["9mm"] = {},
+		["5.56"] = {},
+		["7.62"] = {},
+	}, -- 配置库
+	allCanUse = {}, -- 所有可用枪械
+	allCanUse_index = 1, -- 所有可用枪械列表索引
+	allCanUse_count = 0, -- 所有可用总数量
+	bulletType = "", -- 默认子弹型号
+	gunIndex = 1,	-- 选中枪械下标
+	counter = 0, -- 计数器
+	xCounter = 0, -- x计数器
+	sleep = userInfo.cpuLoad, -- 频率设置 (这里不能设置成0，调试会出BUG)
+	sleepRandom = { userInfo.cpuLoad, userInfo.cpuLoad + 5 }, -- 防检测随机延迟
+	startTime = 0, -- 鼠标按下时记录脚本运行时间戳
+	prevTime = 0, -- 记录上一轮脚本运行时间戳
+	scopeX1 = 1, -- 基瞄压枪倍率 (裸镜、红点、全息、侧瞄)
+	scopeX2 = userInfo.sensitivity.scopeX2, -- 二倍压枪倍率
+	scopeX3 = userInfo.sensitivity.scopeX3, -- 三倍压枪倍率
+	scopeX4 = userInfo.sensitivity.scopeX4, -- 四倍压枪倍率
+	scopeX6 = userInfo.sensitivity.scopeX6, -- 六倍压枪倍率
+	scope_current = "scopeX1", -- 当前使用倍镜
+	generalSensitivityRatio = userInfo.sensitivity.ADS / 100, -- 按比例调整灵敏度
+	isStart = false, -- 是否是启动状态
+	G1 = false, -- G1键状态
+	currentTime = 0, -- 此刻
+	bulletIndex = 0, -- 第几颗子弹
+}
+
+pubg.xLengthForDebug = pubg.generalSensitivityRatio * 30 -- 调试模式下的水平移动单元长度
+-- 渲染节点
+pubg.renderDom = {
+	switchTable = "",
+	separator = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n", -- 分割线
+	combo_key = "G-key", -- 组合键
+	cmd = "cmd", -- 指令
+	autoLog = "No operational data yet.\n", -- 压枪过程产生的数据输出
+}
+
+-- 是否开镜或瞄准
+function pubg.isAimingState (mode)
+	local switch = {
+
+		-- 开镜
+		["ADS"] = function ()
+			if userInfo.aimingSettings == "recommend" then
+				return IsMouseButtonPressed(3) and not IsModifierPressed("lshift")
+			elseif userInfo.aimingSettings == "default" then
+				return not IsModifierPressed("lshift") and not IsModifierPressed("lalt")
+			elseif userInfo.aimingSettings == "ctrlmode" then
+				return IsMouseButtonPressed(3) and not IsModifierPressed("lshift")
+			elseif userInfo.aimingSettings == "custom" then
+				return userInfo.customAimingSettings.ADS()
+			end
+		end,
+
+		-- 腰射
+		["Aim"] = function ()
+			if userInfo.aimingSettings == "recommend" then
+				if userInfo.autoPressAimKey == "" then
+					return IsModifierPressed("lctrl")
+				else
+					return not IsModifierPressed("lshift") and not IsModifierPressed("lalt")
+				end
+			elseif userInfo.aimingSettings == "default" then
+				return IsMouseButtonPressed(3)
+			elseif userInfo.aimingSettings == "ctrlmode" then
+				return false
+			elseif userInfo.aimingSettings == "custom" then
+				return userInfo.customAimingSettings.Aim()
+			end
+		end,
+
+	}
+
+	return switch[mode]()
+end
+
+pubg["M16A4"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 108,
+		ballistic = {
+			{1, 0},
+			{5, 20},
+			{40, 24},
+		}
+	})
+
+end
+
+pubg["SCAR-L"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 96,
+		ballistic = {
+			{1, 0},
+			{2, 30},
+			{5, 20},
+			{10, 24},
+			{15, 28},
+			{40, 32},
+		}
+	})
+
+end
+
+pubg["Beryl M762"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 86,
+		ballistic = {
+			{1, 0},
+			{2, 44},
+			{3, 24},
+			{5, 28},
+			{10, 33},
+			{15, 45},
+			{30, 47},
+			{40, 51},
+		}
+	})
+
+end
+
+pubg["Tommy Gun"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 84,
+		ballistic = {
+			{1, 0},
+			{3, 20},
+			{6, 21},
+			{8, 24},
+			{10, 30},
+			{15, 40},
+			{50, 45},
+		}
+	})
+
+end
+
+pubg["G36C"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 86,
+		ballistic = {
+			{1, 0},
+			{2, 40},
+			{5, 16},
+			{10, 26},
+			{15, 30},
+			{20, 34},
+			{40, 36},
+		}
+	})
+
+end
+
+pubg["Vector"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 55,
+		ballistic = {
+			{1, 0},
+			{6, 16},
+			{10, 20},
+			{13, 24},
+			{15, 28},
+			{20, 32},
+			{33, 34},
+		}
+	})
+
+end
+
+pubg["Micro UZI"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 46,
+		ballistic = {
+			{1, 0},
+			{2, 13},
+			{10, 12},
+			{15, 20},
+			{35, 30},
+		}
+	})
+
+end
+
+pubg["UMP45"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 94,
+		ballistic = {
+			{1, 0},
+			{5, 18},
+			{15, 30},
+			{35, 32},
+		}
+	})
+
+end
+
+pubg["AKM"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 99,
+		ballistic = {
+			{1, 0},
+			{2, 42},
+			{5, 25},
+			{10, 32},
+			{40, 40},
+		}
+	})
+
+end
+
+pubg["M416"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 85,
+		ballistic = {
+			{1, 0},
+			{2, 35},
+			{4, 18},
+			{10, 24},
+			{15, 32},
+			{30, 30},
+			{40, 37},
+		}
+	})
+
+end
+
+pubg["QBZ"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 92,
+		ballistic = {
+			{1, 0},
+			{2, 34},
+			{5, 18},
+			{10, 22},
+			{15, 32},
+			{20, 34},
+			{40, 36},
+		}
+	})
+
+end
+
+pubg["DP-28"] = function (gunName)
+
+	return pubg.execOptions(gunName, {
+		interval = 100,
+		ballistic = {
+			{1, 0},
+			{2, 30},
+			{5, 20},
+			{47, 30},
+		}
+	})
+
+end
+
+-- [[通过枪械名查找在 canuse 中的项]]
+function pubg.canUseFindByGunName (gunName)
+	local forList = { ".45", "9mm", "5.56", "7.62" }
+
+	for i = 1, #forList do
+		local bulletType = forList[i]
+		for j = 1, #userInfo.canUse[bulletType] do
+			local item = userInfo.canUse[bulletType][j]
+			if item[1] == gunName then
+				return item
+			end
+		end
+	end
+end
+
+--[[ FormatFactory ]]
+function pubg.execOptions (gunName, options)
+
+	--[[
+
+		from
+
+		{
+			{ 5, 10 },
+			{ 10, 24 },
+		}
+
+		to
+
+		{ 10, 10, 10, 10, 10, 24, 24, 24, 24, 24 }
+
+		to
+
+		{ 10, 20, 30, 40, 50, 74, 98, 122, 146, 170 }
+
+	]]
+
+	local gunInfo = pubg.canUseFindByGunName(gunName)
+
+	-- Temporary container
+	local ballisticConfig1 = {}
+	-- Temporary container (v3.0)
+	local ballisticConfig2 = {}
+
+	local ballisticIndex = 1
+	for i = 1, #options.ballistic do
+		local nextCount = options.ballistic[i][1]
+		if i ~= 1 then
+			nextCount = options.ballistic[i][1] - options.ballistic[i - 1][1]
+		end
+		for j = 1, nextCount do
+			ballisticConfig1[ballisticIndex] =
+				-- options.ballistic[i][2] * pubg.generalSensitivityRatio * options.ratio
+				options.ballistic[i][2] * pubg.generalSensitivityRatio * gunInfo[3]
+			ballisticIndex = ballisticIndex + 1
+		end
+	end
+
+	for i = 1, #ballisticConfig1 do
+		if i == 1 then
+			ballisticConfig2[i] = ballisticConfig1[i]
+		else
+			ballisticConfig2[i] = ballisticConfig2[i - 1] + ballisticConfig1[i]
+		end
+	end
+
+	-- 取整
+	-- for i = 1, #ballisticConfig2 do
+	-- 	ballisticConfig2[i] = math.ceil(ballisticConfig2[i])
+	-- end
+
+	return {
+		duration = options.interval * #ballisticConfig2, -- Time of duration
+		amount = #ballisticConfig2, -- Number of bullets
+		interval = options.interval, -- Time of each bullet
+		ballistic = ballisticConfig2, -- ballistic data
+		ctrlmodeRatio = gunInfo[4], -- Individual recoil coefficient for each gun when squatting
+	}
+
+end
+
+--[[ Initialization of firearms database ]]
+function pubg.init ()
+
+	-- Clean up the firearms Depot
+	local forList = { ".45", "9mm", "5.56", "7.62" }
+
+	for i = 1, #forList do
+
+		local type = forList[i]
+		local gunCount = 0
+
+		for j = 1, #userInfo.canUse[type] do
+			local gunName = userInfo.canUse[type][j][1]
+			local gunState = userInfo.canUse[type][j][2]
+
+			if gunState >= 1 then
+				-- one series
+				gunCount = gunCount + 1 -- Accumulative number of firearms configuration files
+				pubg.gun[type][gunCount] = gunName -- Adding available firearms to the Arsenal
+				pubg.gunOptions[type][gunCount] = pubg[gunName](gunName) -- Get firearms data and add it to the configuration library
+
+				-- 单独设置连发
+				pubg.gunOptions[type][gunCount].autoContinuousFiring = ({ 0, 0, 1 })[
+					math.max(1, math.min(gunState + 1, 3))
+				]
+				-- all canUse
+				pubg.allCanUse_count = pubg.allCanUse_count + 1 -- Total plus one
+				pubg.allCanUse[pubg.allCanUse_count] = gunName -- All available firearms
+
+				if pubg.bulletType == "" then pubg.bulletType = type end -- Default Bullet type
+
+			end
+
+		end
+
+	end
+
+	-- Initial setting of random number seeds
+	pubg.SetRandomseed()
+	pubg.outputLogRender()
+	-- console.log(pubg)
+
+end
+
+-- SetRandomseed
+function pubg.SetRandomseed ()
+	math.randomseed((pubg.isEffective and {GetRunningTime()} or {0})[1])
+end
+
+--[[ Before automatic press gun ]]
+function pubg.auto (options)
+
+	-- Accurate aiming press gun
+	pubg.currentTime = GetRunningTime()
+	pubg.bulletIndex = math.ceil(((pubg.currentTime - pubg.startTime == 0 and {1} or {pubg.currentTime - pubg.startTime})[1]) / options.interval) + 1
+
+	if pubg.bulletIndex > options.amount then return false end
+	-- Developer Debugging Mode
+	local d = (false and IsKeyLockOn("scrolllock") and { (pubg.bulletIndex - 1) * pubg.xLengthForDebug } or { 0 })[1]
+	local x = math.ceil((pubg.currentTime - pubg.startTime) / (options.interval * (pubg.bulletIndex - 1)) * d) - pubg.xCounter
+	local y = math.ceil((pubg.currentTime - pubg.startTime) / (options.interval * (pubg.bulletIndex - 1)) * options.ballistic[pubg.bulletIndex]) - pubg.counter
+	-- 4-fold pressure gun mode
+	local realY = pubg.getRealY(options, y)
+	MoveMouseRelative(x, realY)
+	-- Whether to issue automatically or not
+	if options.autoContinuousFiring == 1 then
+		PressAndReleaseMouseButton(1)
+	end
+
+	-- Real-time operation parameters
+	pubg.autoLog(options, y)
+	pubg.outputLogRender()
+
+	pubg.xCounter = pubg.xCounter + x
+	pubg.counter = pubg.counter + y
+
+	pubg.autoSleep(false)
+
+end
+
+--[[ Sleep of pubg.auto ]]
+function pubg.autoSleep (isTest)
+	local random = 0
+	if isTest then
+		-- When debugging mode is turned on, Turn off random delays in preventive testing
+		random = math.random(pubg.sleep, pubg.sleep)
+	else
+		random = math.random(pubg.sleepRandom[1], pubg.sleepRandom[2])
+	end
+	-- Sleep(10)
+	Sleep(random)
+end
+
+--[[ get real y position ]]
+function pubg.getRealY (options, y)
+	local realY = y
+
+	if pubg.isAimingState("ADS") then
+		realY = y * pubg[pubg.scope_current]
+	elseif pubg.isAimingState("Aim") then
+		realY = y * userInfo.sensitivity.Aim * pubg.generalSensitivityRatio
+	end
+
+	if userInfo.aimingSettings == "ctrlmode" and IsModifierPressed("lctrl") then
+		realY = realY * options.ctrlmodeRatio
+	end
+
+	return realY
+end
+
+--[[ change pubg isStart status ]]
+function pubg.changeIsStart (isTrue)
+	pubg.isStart = isTrue
+	if isTrue then
+		SetBacklightColor(0, 255, 150, "kb")
+		SetBacklightColor(0, 255, 150, "mouse")
+	else
+		SetBacklightColor(255, 0, 90, "kb")
+		SetBacklightColor(255, 0, 90, "mouse")
+	end
+end
+
+--[[ set bullet type ]]
+function pubg.setBulletType (bulletType)
+	pubg.bulletType = bulletType
+	pubg.gunIndex = 1
+	pubg.allCanUse_index = 0
+
+	local forList = { ".45", "9mm", "5.56", "7.62" }
+
+	for i = 1, #forList do
+		local type = forList[i]
+		if type ==  bulletType then
+			pubg.allCanUse_index = pubg.allCanUse_index + 1
+			break
+		else
+			pubg.allCanUse_index = pubg.allCanUse_index + #pubg.gun[type]
+		end
+	end
+
+	pubg.changeIsStart(true)
+end
+
+--[[ set current scope ]]
+function pubg.setScope (scope)
+	pubg.scope_current = scope
+end
+
+--[[ set current gun ]]
+function pubg.setGun (gunName)
+
+	local forList = { ".45", "9mm", "5.56", "7.62" }
+	local allCanUse_index = 0
+
+	for i = 1, #forList do
+
+		local type = forList[i]
+		local gunIndex = 0
+		local selected = false
+
+		for j = 1, #userInfo.canUse[type] do
+			if userInfo.canUse[type][j][2] >= 1 then
+				gunIndex = gunIndex + 1
+				allCanUse_index = allCanUse_index + 1
+				if userInfo.canUse[type][j][1] == gunName then
+					pubg.bulletType = type
+					pubg.gunIndex = gunIndex
+					pubg.allCanUse_index = allCanUse_index
+					selected = true
+					break
+				end
+			end
+		end
+
+		if selected then break end
+
+	end
+
+	pubg.changeIsStart(true)
+end
+
+--[[ Consider all available firearms as an entire list ]]
+function pubg.findInCanUse (cmd)
+
+	if "first_in_canUse" == cmd then
+		pubg.allCanUse_index = 1
+	elseif "next_in_canUse" == cmd then
+		if pubg.allCanUse_index &lt; #pubg.allCanUse then
+			pubg.allCanUse_index = pubg.allCanUse_index + 1
+		end
+	elseif "last_in_canUse" == cmd then
+		pubg.allCanUse_index = #pubg.allCanUse
+	end
+
+	pubg.setGun(pubg.allCanUse[pubg.allCanUse_index])
+end
+
+--[[ Switching guns in the same series ]]
+function pubg.findInSeries (cmd)
+	if "first" == cmd then
+		pubg.gunIndex = 1
+	elseif "next" == cmd then
+		if pubg.gunIndex &lt; #pubg.gun[pubg.bulletType] then
+			pubg.gunIndex = pubg.gunIndex + 1
+		end
+	elseif "last" == cmd then
+		pubg.gunIndex = #pubg.gun[pubg.bulletType]
+	end
+
+	pubg.setGun(pubg.gun[pubg.bulletType][pubg.gunIndex])
+end
+
+--[[ Script running status ]]
+function pubg.runStatus ()
+	if userInfo.startControl == "capslock" then
+		return IsKeyLockOn("capslock")
+	elseif userInfo.startControl == "numlock" then
+		return IsKeyLockOn("numlock")
+	elseif userInfo.startControl == "G_bind" then
+		return pubg.isStart
+	end
+end
+
+--[[ 一键舔包，仅拾取进背包的物品，无法拾取需穿戴的物品 ]]
+function pubg.fastLickBox ()
+	PressAndReleaseKey("lshift")
+	PressAndReleaseKey("lctrl")
+	PressAndReleaseKey("lalt")
+	PressAndReleaseKey("rshift")
+	PressAndReleaseKey("rctrl")
+	PressAndReleaseKey("ralt")
+	PressAndReleaseKey("tab")
+	Sleep(10 + pubg.sleep)
+	PressAndReleaseMouseButton(1)
+
+	local lastItemCp = {
+		300 / 2560 * 65535,
+		1210 / 1440 * 65535
+	}
+	local itemHeight = 83 / 1440 * 65535
+
+	-- 重复 3 次动作，强化拾取成功率
+	for i = 1, 3 do
+		for j = 1, 13 do
+			MoveMouseTo(lastItemCp[1], lastItemCp[2] - itemHeight * (j - 1))
+			PressMouseButton(1)
+			MoveMouseTo(670 / 2560 * 65535, 710 / 1440 * 65535) -- 修改为背包的坐标
+			ReleaseMouseButton(1)
+		end
+	end
+
+	Sleep(10 + pubg.sleep)
+	MoveMouseTo(lastItemCp[1], lastItemCp[2])
+	PressAndReleaseKey("tab")
+end
+
+--[[ 一键拾取功能，支持所有分辨率 ]]
+function pubg.fastPickup ()
+	PressAndReleaseKey("lshift")
+	PressAndReleaseKey("lctrl")
+	PressAndReleaseKey("lalt")
+	PressAndReleaseKey("rshift")
+	PressAndReleaseKey("rctrl")
+	PressAndReleaseKey("ralt")
+	PressAndReleaseKey("tab")
+	Sleep(10 + pubg.sleep)
+	PressAndReleaseMouseButton(1)
+
+	local lastItemCp = {
+		300 / 2560 * 65535,
+		1210 / 1440 * 65535
+	}
+	local itemHeight = 83 / 1440 * 65535
+
+	-- 重复 3 次动作，强化拾取成功率
+	for i = 1, 3 do
+		for j = 1, 13 do
+			MoveMouseTo(lastItemCp[1], lastItemCp[2] - itemHeight * (j - 1))
+			PressMouseButton(1)
+			MoveMouseTo(32767, 32767)
+			ReleaseMouseButton(1)
+		end
+	end
+
+	Sleep(10 + pubg.sleep)
+	MoveMouseTo(lastItemCp[1], lastItemCp[2])
+	PressAndReleaseKey("tab")
+end
+
+--[[ 背包清空之术，就算战死，也要让敌人舔个空盒！ ]]
+function pubg.fastDiscard ()
+	PressAndReleaseKey("lshift")
+	PressAndReleaseKey("lctrl")
+	PressAndReleaseKey("lalt")
+	PressAndReleaseKey("rshift")
+	PressAndReleaseKey("rctrl")
+	PressAndReleaseKey("ralt")
+	PressAndReleaseKey("tab")
+	Sleep(10 + pubg.sleep)
+	PressAndReleaseMouseButton(1)
+	local lastItemCp = {
+		630 / 2560 * 65535,
+		1210 / 1440 * 65535
+	}
+	local itemHeight = 83 / 1440 * 65535
+	-- 清空背包 第一轮
+	Sleep(10 + pubg.sleep)
+	for i = 1, 5 do
+		for j = 1, 13 do
+			MoveMouseTo(lastItemCp[1], lastItemCp[2] - itemHeight * (j - 1))
+			PressMouseButton(1)
+			MoveMouseTo(0, 0)
+			ReleaseMouseButton(1)
+		end
+	end
+	-- 清空武器
+	Sleep(10 + pubg.sleep)
+	local itemPos = {
+		{ 1770, 180 },
+		{ 1770, 480 },
+		{ 1770, 780 },
+		{ 1770, 1050 },
+		{ 2120, 1050 }
+	}
+	for i = 1, #itemPos do
+		MoveMouseTo(itemPos[i][1] / 2560 * 65535, itemPos[i][2] / 1440 * 65535)
+		PressAndReleaseMouseButton(3)
+	end
+	-- 清空背包 第二轮
+	Sleep(10 + pubg.sleep)
+	for i = 1, 5 do
+		for j = 1, 13 do
+			MoveMouseTo(lastItemCp[1], lastItemCp[2] - itemHeight * (j - 1))
+			PressMouseButton(1)
+			MoveMouseTo(0, 0)
+			ReleaseMouseButton(1)
+		end
+	end
+	-- 清空装备
+	Sleep(10 + pubg.sleep)
+	local itemPos2 = {
+		{ 900, 392 },
+		{ 900, 630 },
+		{ 900, 720 },
+		{ 900, 808 },
+		{ 1605, 397 },
+		{ 1605, 481 },
+		{ 1605, 632 },
+		{ 1605, 719 },
+		{ 1605, 807 },
+		{ 1605, 1049 },
+		{ 1605, 1229 }
+	}
+	for i = 1, #itemPos2 do
+		MoveMouseTo(itemPos2[i][1] / 2560 * 65535, itemPos2[i][2] / 1440 * 65535)
+		-- Sleep(300 + pubg.sleep)
+		PressAndReleaseMouseButton(3)
+	end
+	Sleep(10 + pubg.sleep)
+	MoveMouseTo(lastItemCp[1], lastItemCp[2])
+	PressAndReleaseKey("tab")
+end
+
+--[[ G key command binding ]]
+function pubg.runCmd (cmd)
+	if cmd == "" then cmd = "none" end
+	local switch = {
+		["none"] = function () end,
+		[".45"] = pubg.setBulletType,
+		["9mm"] = pubg.setBulletType,
+		["5.56"] = pubg.setBulletType,
+		["7.62"] = pubg.setBulletType,
+		["scopeX1"] = pubg.setScope,
+		["scopeX2"] = pubg.setScope,
+		["scopeX3"] = pubg.setScope,
+		["scopeX4"] = pubg.setScope,
+		["scopeX6"] = pubg.setScope,
+		["UMP45"] = pubg.setGun,
+		["Tommy Gun"] = pubg.setGun,
+		["Vector"] = pubg.setGun,
+		["Micro UZI"] = pubg.setGun,
+		["M416"] = pubg.setGun,
+		["SCAR-L"] = pubg.setGun,
+		["QBZ"] = pubg.setGun,
+		["G36C"] = pubg.setGun,
+		["M16A4"] = pubg.setGun,
+		["AKM"] = pubg.setGun,
+		["Beryl M762"] = pubg.setGun,
+		["DP-28"] = pubg.setGun,
+		["first"] = pubg.findInSeries,
+		["next"] = pubg.findInSeries,
+		["last"] = pubg.findInSeries,
+		["first_in_canUse"] = pubg.findInCanUse,
+		["next_in_canUse"] = pubg.findInCanUse,
+		["last_in_canUse"] = pubg.findInCanUse,
+		["fast_pickup"] = pubg.fastPickup,
+		["fast_discard"] = pubg.fastDiscard,
+		["fast_lick_box"] = pubg.fastLickBox,
+		["off"] = function ()
+			pubg.changeIsStart(false)
+		end,
+	}
+
+	local cmdGroup = string.split(cmd, '|')
+
+	for i = 1, #cmdGroup do
+		local _cmd = cmdGroup[i]
+		if switch[_cmd] then
+			switch[_cmd](_cmd)
+		end
+	end
+end
+
+--[[ autputLog render ]]
+function pubg.outputLogRender ()
+	if userInfo.debug == 0 then return false end
+	if not pubg.G1 then
+		pubg.renderDom.switchTable = pubg.outputLogGunSwitchTable()
+	end
+	local resStr = table.concat({
+		"\n>> [\"", pubg.renderDom.combo_key, "\"] = \"", pubg.renderDom.cmd, "\" &lt;&lt;\n",
+		pubg.renderDom.separator,
+		pubg.renderDom.switchTable,
+		pubg.renderDom.separator,
+		pubg.outputLogGunInfo(),
+		pubg.renderDom.separator,
+		pubg.renderDom.autoLog,
+		pubg.renderDom.separator,
+	})
+	ClearLog()
+	OutputLogMessage(resStr)
+end
+
+--[[ Output switching table ]]
+function pubg.outputLogGunSwitchTable ()
+	local forList = { ".45", "9mm", "5.56", "7.62" }
+	local allCount = 0
+	local resStr = "      canUse_i\t      series_i\t      Series\t      ratio\t      ctrl ratio\t      Gun Name\n\n"
+
+	for i = 1, #forList do
+		local type = forList[i]
+		local gunCount = 0
+
+		for j = 1, #userInfo.canUse[type] do
+			if userInfo.canUse[type][j][2] >= 1 then
+				local gunName = userInfo.canUse[type][j][1]
+				local tag = gunName == pubg.gun[pubg.bulletType][pubg.gunIndex] and "=> " or "      "
+				gunCount = gunCount + 1
+				allCount = allCount + 1
+				resStr = table.concat({ resStr, tag, allCount, "\t", tag, gunCount, "\t", tag, type, "\t", tag, userInfo.canUse[type][j][3], "\t", tag, userInfo.canUse[type][j][4], "\t", tag, gunName, "\n" })
+			end
+		end
+
+	end
+
+	return resStr
+end
+
+-- output Log Gun Info
+function pubg.outputLogGunInfo ()
+	local k = pubg.bulletType
+	local i = pubg.gunIndex
+	local gunName = pubg.gun[k][i]
+
+	return table.concat({
+		"Currently scope: [ " .. pubg.scope_current .. " ]\n",
+		"Currently series: [ ", k, " ]\n",
+		"Currently index in series: [ ", i, " / ", #pubg.gun[k], " ]\n",
+		"Currently index in canUse: [ ", pubg.allCanUse_index, " / ", pubg.allCanUse_count, " ]\n",
+		"Recoil table of [ ", gunName, " ]:\n",
+		pubg.outputLogRecoilTable(),
+	})
+end
+
+--[[ output recoil table log ]]
+function pubg.outputLogRecoilTable ()
+	local k = pubg.bulletType
+	local i = pubg.gunIndex
+	local resStr = "{ "
+	for j = 1, #pubg.gunOptions[k][i].ballistic do
+		local num = pubg.gunOptions[k][i].ballistic[j]
+		resStr = table.concat({ resStr, num })
+		if j ~= #pubg.gunOptions[k][i].ballistic then
+			resStr = table.concat({ resStr, ", " })
+		end
+	end
+
+	resStr = table.concat({ resStr, " }\n" })
+
+	return resStr
+end
+
+--[[ log of pubg.auto ]]
+function pubg.autoLog (options, y)
+	pubg.renderDom.autoLog = table.concat({
+		"----------------------------------- Automatically counteracting gun recoil -----------------------------------\n",
+		"------------------------------------------------------------------------------------------------------------------------------\n",
+		"bullet index: ", pubg.bulletIndex, "    target counter: ", options.ballistic[pubg.bulletIndex], "    current counter: ", pubg.counter, "\n",
+		"D-value(target - current): ", options.ballistic[pubg.bulletIndex], " - ", pubg.counter, " = ", options.ballistic[pubg.bulletIndex] - pubg.counter, "\n",
+		"move: math.ceil((", pubg.currentTime, " - ", pubg.startTime, ") / (", options.interval, " * (", pubg.bulletIndex, " - 1)) * ", options.ballistic[pubg.bulletIndex], ") - ", pubg.counter, " = ", y, "\n",
+		"------------------------------------------------------------------------------------------------------------------------------\n",
+	})
+end
+
+function pubg.PressOrRelaseAimKey (toggle)
+	if userInfo.autoPressAimKey ~= "" then
+		if toggle then
+			PressKey(userInfo.autoPressAimKey)
+		else
+			ReleaseKey(userInfo.autoPressAimKey)
+		end
+	end
+end
+
+--[[ Automatic press gun ]]
+function pubg.OnEvent_NoRecoil (event, arg, family)
+	if event == "MOUSE_BUTTON_PRESSED" and arg == 1 and family == "mouse" then
+		if not pubg.runStatus() then return false end
+		if userInfo.aimingSettings ~= "default" and not IsMouseButtonPressed(3) then
+			pubg.PressOrRelaseAimKey(true)
+		end
+		if pubg.isAimingState("ADS") or pubg.isAimingState("Aim") then
+			pubg.startTime = GetRunningTime()
+			pubg.G1 = true
+			SetMKeyState(1, "kb")
+		end
+	end
+
+	if event == "MOUSE_BUTTON_RELEASED" and arg == 1 and family == "mouse" then
+		pubg.PressOrRelaseAimKey(false)
+		pubg.G1 = false
+		pubg.counter = 0 -- Initialization counter
+		pubg.xCounter = 0 -- Initialization xCounter
+		pubg.SetRandomseed() -- Reset random number seeds
+	end
+
+	if event == "M_PRESSED" and arg == 1 and pubg.G1 then
+		pubg.auto(pubg.gunOptions[pubg.bulletType][pubg.gunIndex])
+		SetMKeyState(1, "kb")
+	end
+end
+
+-- [[ processing instruction ]]
+function pubg.modifierHandle (modifier)
+	--local cmd = userInfo.G_bind[modifier]
+	local cmd = nil
+	if (not IsKeyLockOn("numlock") and not IsKeyLockOn("capslock") and not IsKeyLockOn("scrolllock") ) then
+      		cmd = "Beryl M762"
+	elseif (not IsKeyLockOn("numlock") and not IsKeyLockOn("capslock") and IsKeyLockOn("scrolllock") ) then
+      		cmd = "AKM"
+	elseif (not IsKeyLockOn("numlock") and IsKeyLockOn("capslock") and not IsKeyLockOn("scrolllock") ) then
+      		cmd = "M416"	
+	elseif (not IsKeyLockOn("numlock") and IsKeyLockOn("capslock") and IsKeyLockOn("scrolllock") ) then
+      		cmd = "SCAR-L"
+	elseif (IsKeyLockOn("numlock") and not IsKeyLockOn("capslock") and not IsKeyLockOn("scrolllock") ) then
+      		cmd = "M16A4"
+	elseif (IsKeyLockOn("numlock") and not IsKeyLockOn("capslock") and IsKeyLockOn("scrolllock") ) then
+      		cmd = "Tommy Gun"
+	elseif (IsKeyLockOn("numlock") and IsKeyLockOn("capslock") and not IsKeyLockOn("scrolllock") ) then
+      		cmd = "Vector"
+	elseif (IsKeyLockOn("numlock") and IsKeyLockOn("capslock") and IsKeyLockOn("scrolllock") ) then
+      		cmd = "UMP45"
+	end
+
+	pubg.renderDom.combo_key = modifier -- Save combination keys
+
+	if (cmd) then
+		pubg.renderDom.cmd = cmd -- Save instruction name
+		pubg.runCmd(cmd) -- Execution instructions
+	else
+		pubg.renderDom.cmd = ""
+	end
+
+	pubg.outputLogRender() -- Call log rendering method to output information
+end
+
+--[[ Listener method ]]
+function OnEvent (event, arg, family)
+
+	-- OutputLogMessage("event = %s, arg = %s, family = %s\n", event, arg, family)
+	-- console.log("event = " .. event .. ", arg = " .. arg .. ", family = " .. family)
+
+	pubg.OnEvent_NoRecoil(event, arg, family)
+
+	-- Switching arsenals according to different types of ammunition
+	if event == "MOUSE_BUTTON_PRESSED" and arg >=3 and arg &lt;= 11 and family == "mouse" then
+		local modifier = "G" .. arg
+		local list = { "lalt", "lctrl", "lshift", "ralt", "rctrl", "rshift" }
+
+		for i = 1, #list do
+			if IsModifierPressed(list[i]) then
+				modifier = list[i] .. " + " .. modifier
+				break
+			end
+		end
+
+		pubg.modifierHandle(modifier)
+	elseif event == "G_PRESSED" and arg >=1 and arg &lt;= 12 then
+		-- if not pubg.runStatus() and userInfo.startControl ~= "G_bind" then return false end
+		local modifier = "F" .. arg
+
+		pubg.modifierHandle(modifier)
+	end
+
+	-- Script deactivated event
+	if event == "PROFILE_DEACTIVATED" then
+		EnablePrimaryMouseButtonEvents(false)
+		ReleaseKey("lshift")
+		ReleaseKey("lctrl")
+		ReleaseKey("lalt")
+		ReleaseKey("rshift")
+		ReleaseKey("rctrl")
+		ReleaseKey("ralt")
+		ClearLog()
+	end
+
+end
+
+--[[ tools ]]
+
+-- split function
+function string.split (str, s)
+	if string.find(str, s) == nil then return { str } end
+
+	local res = {}
+	local reg = "(.-)" .. s .. "()"
+	local index = 0
+	local last_i
+
+	for n, i in string.gfind(str, reg) do
+		index = index + 1
+		res[index] = n
+		last_i = i
+	end
+
+	res[index + 1] = string.sub(str, last_i)
+
+	return res
+end
+
+-- Javascript Array.prototype.reduce
+function table.reduce (t, c)
+	local res = c(t[1], t[2])
+	for i = 3, #t do res = c(res, t[i]) end
+	return res
+end
+
+-- Javascript Array.prototype.map
+function table.map (t, c)
+	local res = {}
+	for i = 1, #t do res[i] = c(t[i], i) end
+	return res
+end
+
+-- Javascript Array.prototype.forEach
+function table.forEach (t, c)
+	for i = 1, #t do c(t[i], i) end
+end
+
+--[[
+	* 打印 table
+	* @param  {any} val     传入值
+	* @return {str}         格式化后的文本
+]]
+function table.print (val)
+
+	local function loop (val, keyType, _indent)
+		_indent = _indent or 1
+		keyType = keyType or "string"
+		local res = ""
+		local indentStr = "     " -- 缩进空格
+		local indent = string.rep(indentStr, _indent)
+		local end_indent = string.rep(indentStr, _indent - 1)
+		local putline = function (...)
+			local arr = { res, ... }
+			for i = 1, #arr do
+				if type(arr[i]) ~= "string" then arr[i] = tostring(arr[i]) end
+			end
+			res = table.concat(arr)
+		end
+
+		if type(val) == "table" then
+			putline("{ ")
+
+			if #val > 0 then
+				local index = 0
+				local block = false
+
+				for i = 1, #val do
+					local n = val[i]
+					if type(n) == "table" or type(n) == "function" then
+						block = true
+						break
+					end
+				end
+
+				if block then
+					for i = 1, #val do
+						local n = val[i]
+						index = index + 1
+						if index == 1 then putline("\n") end
+						putline(indent, loop(n, type(i), _indent + 1), "\n")
+						if index == #val then putline(end_indent) end
+					end
+				else
+					for i = 1, #val do
+						local n = val[i]
+						index = index + 1
+						putline(loop(n, type(i), _indent + 1))
+					end
+				end
+
+			else
+				putline("\n")
+				for k, v in pairs(val) do
+					putline(indent, k, " = ", loop(v, type(k), _indent + 1), "\n")
+				end
+				putline(end_indent)
+			end
+
+			putline("}, ")
+		elseif type(val) == "string" then
+			val = string.gsub(val, "\a", "\\a") -- 响铃(BEL)
+			val = string.gsub(val, "\b", "\\b") -- 退格(BS),将当前位置移到前一列
+			val = string.gsub(val, "\f", "\\f") -- 换页(FF),将当前位置移到下页开头
+			val = string.gsub(val, "\n", "\\n") -- 换行(LF),将当前位置移到下一行开头
+			val = string.gsub(val, "\r", "\\r") -- 回车(CR),将当前位置移到本行开头
+			val = string.gsub(val, "\t", "\\t") -- 水平指标(HT),(调用下一个TAB位置)
+			val = string.gsub(val, "\v", "\\v") -- 垂直指标(VT)
+			putline("\"", val, "\", ")
+		elseif type(val) == "boolean" then
+			putline(val and "true, " or "false, ")
+		elseif type(val) == "function" then
+			putline(tostring(val), ", ")
+		elseif type(val) == "nil" then
+			putline("nil, ")
+		else
+			putline(val, ", ")
+		end
+
+		return res
+	end
+
+	local res = loop(val)
+	res = string.gsub(res, ",(%s*})", "%1")
+	res = string.gsub(res, ",(%s*)$", "%1")
+	res = string.gsub(res, "{%s+}", "{}")
+
+	return res
+end
+
+-- console
+console = {}
+function console.log (str)
+	OutputLogMessage(table.print(str) .. "\n")
+end
+
+--[[ Other ]]
+EnablePrimaryMouseButtonEvents(true) -- Enable left mouse button event reporting
+pubg.GD = GetDate -- Setting aliases
+pubg.init() -- Script initialization
+
+--[[ Script End ]]</script>
+  </profile>
+</profiles>
