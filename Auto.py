@@ -14,6 +14,7 @@ dict = {'Beryl M762': '0|0|0', 'AKM': '0|0|1', 'M416': '0|1|0', 'QBZ': '0|1|0', 
         'Tommy Gun': "1|0|1", 'Vector': '1|1|0', 'UMP45': '1|1|1', 'G36C': '0|1|0', 'GROZA': '0|1|0', 'Mini14': '1|0|0',
         'Mk14': '1|0|0', 'SLR': '1|0|0', 'MP5K': '1|1|1', }
 
+
 current_gun = ""  # 当前的武器
 # logitech_handle = []  # 当前的罗技进程
 
@@ -137,7 +138,7 @@ def play_sound(content):
 
 
 if __name__ == '__main__':
-    # PlaySound("M416")
     ctypes.windll.kernel32.SetConsoleTitleW("Main")
     os.system("mode con cols=30 lines=30")
+    print("         本软件免费使用!\n https://github.com/hcandy/PUBG_NO_RECOIL_AUTO\n 作者QQ:434461000")
     screen(1)
