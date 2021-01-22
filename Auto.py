@@ -103,10 +103,10 @@ def screen():
         im.save(r'tmp\\tmp.png')
         pass
 
-    screenshot()
-    similarity()
-    time.sleep(1)
-    screen()
+    while True:
+        screenshot()
+        similarity()
+        time.sleep(1)
 
 # 更改按键状态
 def change_key_state(content):
