@@ -5,39 +5,33 @@ import cv2 as cv
 import pyttsx3 as pytts
 import pyttsx3.drivers
 import pyttsx3.drivers.sapi5
-import win32api as winapi
 from PIL import ImageGrab
 
-from pynput.keyboard import Key, Controller, Listener
-
-dict = {'Beryl M762': '0|0|0', 'AKM': '0|0|1', 'M416': '0|1|0', 'QBZ': '0|1|0', 'SCAR-L': '0|1|1', 'M16A4': '1|0|0',
-        'Tommy Gun': "1|0|1", 'Vector': '1|1|0', 'UMP45': '1|1|1', 'G36C': '0|1|0', 'GROZA': '0|1|0', 'Mini14': '1|0|0',
-        'Mk14': '1|0|0', 'SLR': '1|0|0', 'MP5K': '1|1|1', }
-
+from pynput.keyboard import Listener
 
 current_gun = ""  # 当前的武器名
 
 current_gun_pos_id = 1  # 当前武器位
 
-# logitech_handle = []  # 当前的罗技进程
-
-# print(cv.__version__)
+# 枪名取对应的lua配置名
 
 
-# def Start_Logitech_Driver():
-#     global logitech_handle
-#     logitech_handle = win32process.CreateProcess('C:\\Program Files\\Logitech Gaming Software\\LCore.exe', '/minimized',
-#                                                  None, None, 0, win32process.CREATE_NO_WINDOW, None, None,
-#                                                  win32process.STARTUPINFO())
-#     pass
+def get_gun_config_name(gun_name):
+    # 枪械名字对应的配置 lua存在的不在这里写 没有枪械配置的先套用其他枪的配置
+    dict = {'GROZA': 'M416', 'MP5K': 'Vector',
+            'Mini14': 'M16A4', 'Mk14': 'M16A4', 'SLR': 'M16A4'}
+    return dict.get(gun_name) or gun_name
+
+# 保存配置到D盘根目录
 
 
-# def Kill_Logitech_Driver():
-#     if logitech_handle:
-#         win32process.TerminateProcess(logitech_handle[0], 0)
-#     else:
-#         os.system('taskkill /IM LCore.exe /F')
-#     pass
+def save_config(gun_name):
+    file = "D:\\config.lua"
+    with open(file, "w+") as file:
+        file.write("config='"+gun_name+"'")
+
+
+# 对比图片特征点
 
 
 def image_similarity_opencv(img1, img2):
@@ -61,21 +55,21 @@ def image_similarity_opencv(img1, img2):
 
 def similarity():
     global current_gun
-    gun_list = ['AKM', 'Beryl M762', 'G36C', 'GROZA', 'M16A4',
-                'M416', 'Mini14', 'Mk14', 'MP5K', 'SCAR-L', 'SLR', 'SCAR-L', 'UMP45', 'Vector', 'QBZ']
+    gun_list = ['AKM', 'Beryl M762', 'G36C', 'GROZA', 'M16A4', 'M416', 'Mini14',
+                'Mk14', 'MP5K', 'SCAR-L', 'SLR', 'SCAR-L', 'UMP45', 'Vector', 'QBZ']
     for gun_name in gun_list:
         result = image_similarity_opencv(
             r"resource\\" + gun_name + ".png", r'tmp\\tmp.png')
         if result >= 30:
             if current_gun != gun_name:
                 current_gun = gun_name  # 避免重复操作
-                print("切换武器," + gun_name)
-
-                print(dict[gun_name])
-                change_key_state(dict[gun_name])
-
-                play_sound("切换武器," + gun_name)
+                print("切换武器," + gun_name+",当前武器," + str(current_gun_pos_id))
+                save_config(get_gun_config_name(gun_name))
+                play_sound("切换武器," + gun_name+",当前武器," +
+                           str(current_gun_pos_id))
             break
+
+# 截图
 
 
 def screen():
@@ -108,45 +102,20 @@ def screen():
         similarity()
         time.sleep(1)
 
-# 更改按键状态
-def change_key_state(content):
-    strlist = content.split('|')
-    numState = int(strlist[0])
-    capState = int(strlist[1])
-    scrState = int(strlist[2])
-    keyboard = Controller()
-    if winapi.GetKeyState(144) == numState:
-        pass
-    else:
-        keyboard.press(Key.num_lock)
-        keyboard.release(Key.num_lock)
-    pass
-
-    if winapi.GetKeyState(145) == scrState:
-        pass
-    else:
-        keyboard.press(Key.scroll_lock)
-        keyboard.release(Key.scroll_lock)
-    pass
-
-    if winapi.GetKeyState(20) == capState:
-        pass
-    else:
-        keyboard.press(Key.caps_lock)
-        keyboard.release(Key.caps_lock)
-    pass
+# 播放声音
 
 
 def play_sound(content):
     engine = pytts.init()
-    engine.setProperty('rate', 220)
-    engine.setProperty('volume', 0.5)
+    engine.setProperty('rate', 220)  # 语速
+    engine.setProperty('volume', 0.35)  # 音量
     engine.say(content)
     engine.runAndWait()
     engine.stop()
     pass
 
 
+# 监听键盘输入
 def on_release(key):
     global current_gun_pos_id
     try:
@@ -156,14 +125,18 @@ def on_release(key):
     finally:
         return True
 
+# 监听键盘输入
+
+
 def keyboard_listener():
     listener = Listener(on_release=on_release)
     listener.start()
     listener.join()
 
+# 程序入口
 
 
-if __name__ == '__main__':
+def main():
     os.system("title Main")
     os.system("mode con cols=30 lines=30")
     print("         本软件免费使用!\n https://github.com/hcandy/PUBG_NO_RECOIL_AUTO\n 作者QQ:434461000")
@@ -172,4 +145,7 @@ if __name__ == '__main__':
                threading.Thread(target=keyboard_listener)]
     for t in threads:
         t.start()
-    
+
+
+if __name__ == '__main__':
+    main()
