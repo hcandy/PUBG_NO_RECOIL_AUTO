@@ -15,9 +15,9 @@
 
 每秒截图游戏中一号武器位 跟资源图片对比
 
-~~控制键盘 CAPSLOCK NUMLOCK SCRLKLOCK 键盘状态 
+~~ 控制键盘 CAPSLOCK NUMLOCK SCRLKLOCK 键盘状态 
 
-~~Soldier76脚本 修改代码判断状态达到自动切换武器
+~~ Soldier76脚本 修改代码判断状态达到自动切换武器
 
 现在利用lua dofile读取文件变量
 
