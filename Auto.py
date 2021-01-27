@@ -5,38 +5,41 @@ import cv2 as cv
 import pyttsx3 as pytts
 import pyttsx3.drivers
 import pyttsx3.drivers.sapi5
-from PIL import ImageGrab
+import json
+import numpy as np
 
+from mss import mss
+import mss.tools as mss_tools
 from pynput.keyboard import Listener
 
 current_gun = ""  # 当前的武器名
 
 current_gun_pos_id = 1  # 当前武器位
 
+gun_list = []
+
+
 # 枪名取对应的lua配置名
-
-
 def get_gun_config_name(gun_name):
     # 枪械名字对应的配置 lua存在的不在这里写 没有枪械配置的先套用其他枪的配置
-    dict = {'GROZA': 'M416', 'MP5K': 'Vector',
-            'Mini14': 'M16A4', 'Mk14': 'M16A4', 'SLR': 'M16A4'}
-    return dict.get(gun_name) or gun_name
+    with open('resource//dict//gun_dict.json', 'r') as f:
+        gun_dict = json.load(f)
+
+    return gun_dict.get(gun_name) or gun_name
+
 
 # 保存配置到D盘根目录
-
-
 def save_config(gun_name):
     file = "D:\\config.lua"
     with open(file, "w+") as file:
-        file.write("config='"+gun_name+"'")
+        file.write("fireMode='"+gun_name+"'")
 
 
 # 对比图片特征点
-
-
 def image_similarity_opencv(img1, img2):
     image1 = cv.imread(img1, 0)
-    image2 = cv.imread(img2, 0)
+    image2 = cv.cvtColor(img2, cv.COLOR_RGB2GRAY)
+
     orb = cv.ORB_create()
     kp1, des1 = orb.detectAndCompute(image1, None)
     kp2, des2 = orb.detectAndCompute(image2, None)
@@ -45,70 +48,45 @@ def image_similarity_opencv(img1, img2):
         return 0
     matches = bf.match(des1, des2)
     matches = sorted(matches, key=lambda x: x.distance)
-    goodMatches = []
+    good_matches = []
     for m in matches:
         if m.distance <= 50:
-            goodMatches.append(m)
+            good_matches.append(m)
         pass
-    return len(goodMatches)
+    return len(good_matches)
 
 
-def similarity():
+def similarity(im):
     global current_gun
-    gun_list = ['AKM', 'Beryl M762', 'G36C', 'GROZA', 'M16A4', 'M416', 'Mini14',
-                'Mk14', 'MP5K', 'SCAR-L', 'SLR', 'SCAR-L', 'UMP45', 'Vector', 'QBZ']
+    global gun_list
+
     for gun_name in gun_list:
         result = image_similarity_opencv(
-            r"resource\\" + gun_name + ".png", r'tmp\\tmp.png')
+            r"resource\\" + gun_name + ".png", im)
         if result >= 30:
             if current_gun != gun_name:
                 current_gun = gun_name  # 避免重复操作
-                print("切换武器," + gun_name+",当前武器," + str(current_gun_pos_id))
+                print(gun_name+" deployed. slot " + str(current_gun_pos_id))
                 save_config(get_gun_config_name(gun_name))
-                play_sound("切换武器," + gun_name+",当前武器," +
-                           str(current_gun_pos_id))
+                play_sound(gun_name+" deployed. slot " + str(current_gun_pos_id))
             break
 
-# 截图
 
-
+# 截屏
 def screen():
-    absPath = os.path.abspath('.')
-    path = [x for x in os.listdir('.') if os.path.isdir(x)]
-    if 'tmp' in path:
-        pass
-    else:
-        pngPath = os.path.join(absPath, 'tmp')
-        os.mkdir(pngPath)
-        pass
-
-    # 截屏
-
-    def screenshot():
-        x = 1940
-        y = 1325
-        # 切换二号武器 截图Y坐标向上移动80像素
-        if current_gun_pos_id == 2:
-            y = y - 80
-            pass
-
-        box = (x, y, x+195, y+100)
-        im = ImageGrab.grab(box)
-        im.save(r'tmp\\tmp.png')
-        pass
 
     while True:
-        screenshot()
-        similarity()
+        similarity(screenshot())
         time.sleep(1)
 
+
 # 播放声音
-
-
 def play_sound(content):
     engine = pytts.init()
-    engine.setProperty('rate', 220)  # 语速
-    engine.setProperty('volume', 0.35)  # 音量
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[1].id)
+    engine.setProperty('rate', 200)  # 语速
+    engine.setProperty('volume', 0.8)  # 音量
     engine.say(content)
     engine.runAndWait()
     engine.stop()
@@ -125,22 +103,46 @@ def on_release(key):
     finally:
         return True
 
+
 # 监听键盘输入
-
-
 def keyboard_listener():
     listener = Listener(on_release=on_release)
     listener.start()
     listener.join()
 
+
+def scan(img_dir):
+    for files in os.listdir(img_dir):
+        if os.path.splitext(files)[1] == '.png':
+            gun_list.append(os.path.splitext(files)[0])
+
+
+def screenshot():
+    with mss() as sct:
+        monitor = sct.monitors[1]
+        left = 1940
+        top = 1325
+        width = 195
+        height = 100
+        if current_gun_pos_id == 2:
+            top = top - 80
+            pass
+        bbox = (left, top, left + width, top + height)
+
+        shot = sct.grab(bbox)
+        return np.array(bytearray(shot.rgb), dtype=np.uint8).reshape((height, width, 3))
+
+
 # 程序入口
-
-
 def main():
-    os.system("title Main")
-    os.system("mode con cols=30 lines=30")
-    print("         本软件免费使用!\n https://github.com/hcandy/PUBG_NO_RECOIL_AUTO\n 作者QQ:434461000")
+    os.system("title Solder76 Smart")
+    os.system("mode con cols=32 lines=5")
+    print("Solder 76 Smart lite")
+    print("version 1.0 beta")
 
+    scan("resource")
+
+    play_sound("Tactical visor activated. ")
     threads = [threading.Thread(target=screen),
                threading.Thread(target=keyboard_listener)]
     for t in threads:
