@@ -1,10 +1,15 @@
 import os
 import threading
 import time
+import win32con
+import win32gui
+import win32ui
 import cv2 as cv
 import pyttsx3 as pytts
 import pyttsx3.drivers
 import pyttsx3.drivers.sapi5
+from queue import Queue
+from pynput.keyboard import Listener, Key
 import json
 import numpy as np
 
@@ -12,9 +17,9 @@ from mss import mss
 import mss.tools as mss_tools
 from pynput.keyboard import Listener
 
-current_gun = ""  # 当前的武器名
+q = Queue()
 
-current_gun_pos_id = 1  # 当前武器位
+current_gun = {1: "", 2: ""}  # 当前的武器名
 
 gun_list = []
 
@@ -32,7 +37,7 @@ def get_gun_config_name(gun_name):
 def save_config(gun_name):
     file = "D:\\config.lua"
     with open(file, "w+") as file:
-        file.write("fireMode='"+gun_name+"'")
+        file.write("config='"+gun_name+"'")
 
 
 # 对比图片特征点
@@ -48,67 +53,80 @@ def image_similarity_opencv(img1, img2):
         return 0
     matches = bf.match(des1, des2)
     matches = sorted(matches, key=lambda x: x.distance)
-    good_matches = []
+    goodMatches = 0
     for m in matches:
         if m.distance <= 50:
-            good_matches.append(m)
+            goodMatches = goodMatches+1
         pass
-    return len(good_matches)
+    return goodMatches
 
 
-def similarity(im):
-    global current_gun
+def similarity(im, gun_pos):
     global gun_list
 
     for gun_name in gun_list:
         result = image_similarity_opencv(
             r"resource\\" + gun_name + ".png", im)
-        if result >= 30:
-            if current_gun != gun_name:
-                current_gun = gun_name  # 避免重复操作
-                print(gun_name+" deployed. slot " + str(current_gun_pos_id))
+        if result >= 25:
+            if current_gun[gun_pos] != gun_name:
+                current_gun[gun_pos] = gun_name  # 避免重复操作
                 save_config(get_gun_config_name(gun_name))
-                play_sound(gun_name+" deployed. slot " + str(current_gun_pos_id))
-            break
+                play_sound("切换武器," + gun_name+",当前武器," +
+                           str(gun_pos))
+            else:  # 只在第一次拿到这把枪的时候才播报语音吧 感觉有点卡 第二次切换的时候直接保存配置
+                save_config(get_gun_config_name(gun_name))
+                print("切换武器," + gun_name+",当前武器," +
+                      str(gun_pos))
+            return True
+    return False
 
 
 # 截屏
-def screen():
+def screen(gun_pos):
 
     while True:
-        similarity(screenshot())
+        similarity(screenshot(gun_pos))
+        if similarity(gun_pos):  # 如果返回True 退出循环
+            break
+        n = n+1
+        if n >= 5:  # 如果5次还没有识别出来 退出循环
+            break
         time.sleep(1)
 
 
 # 播放声音
 def play_sound(content):
     engine = pytts.init()
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[1].id)
-    engine.setProperty('rate', 200)  # 语速
-    engine.setProperty('volume', 0.8)  # 音量
+    engine.setProperty('rate', 220)  # 语速
+    engine.setProperty('volume', 0.35)  # 音量
     engine.say(content)
     engine.runAndWait()
     engine.stop()
     pass
 
-
 # 监听键盘输入
 def on_release(key):
-    global current_gun_pos_id
     try:
         key = int(key.char)
         if key == 1 or key == 2:
-            current_gun_pos_id = key
+            q.queue.clear()  # 每次按下 1 或者 2  清空掉之前的队列
+            q.put(key)
+
     finally:
         return True
 
+
+# 消费者
+def consumer():
+    while True:
+        key = q.get()
+        screen(key)
+        q.task_done()
 
 # 监听键盘输入
 def keyboard_listener():
     listener = Listener(on_release=on_release)
     listener.start()
-    listener.join()
 
 
 def scan(img_dir):
@@ -117,21 +135,21 @@ def scan(img_dir):
             gun_list.append(os.path.splitext(files)[0])
 
 
-def screenshot():
+def screenshot(gun_pos):
     with mss() as sct:
         monitor = sct.monitors[1]
         left = 1940
         top = 1325
         width = 195
         height = 100
-        if current_gun_pos_id == 2:
+        if gun_pos == 2:
             top = top - 80
             pass
         bbox = (left, top, left + width, top + height)
 
         shot = sct.grab(bbox)
         a = np.array(bytearray(shot.rgb), dtype=np.uint8).reshape((height, width, 3))
-        return a
+        return a, gun_pos
 
 
 # 程序入口
@@ -142,7 +160,7 @@ def main():
 
     scan("resource")
 
-    threads = [threading.Thread(target=screen),
+    threads = [threading.Thread(target=consumer),
                threading.Thread(target=keyboard_listener)]
     for t in threads:
         t.start()
