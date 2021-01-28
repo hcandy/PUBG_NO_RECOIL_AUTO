@@ -130,19 +130,18 @@ def screenshot():
         bbox = (left, top, left + width, top + height)
 
         shot = sct.grab(bbox)
-        return np.array(bytearray(shot.rgb), dtype=np.uint8).reshape((height, width, 3))
+        a = np.array(bytearray(shot.rgb), dtype=np.uint8).reshape((height, width, 3))
+        return a
 
 
 # 程序入口
 def main():
-    os.system("title Solder76 Smart")
-    os.system("mode con cols=32 lines=5")
-    print("Solder 76 Smart lite")
-    print("version 1.0 beta")
+    os.system("title Main")
+    os.system("mode con cols=30 lines=30")
+    print("         本软件免费使用!\n https://github.com/hcandy/PUBG_NO_RECOIL_AUTO\n 作者QQ:434461000")
 
     scan("resource")
 
-    play_sound("Tactical visor activated. ")
     threads = [threading.Thread(target=screen),
                threading.Thread(target=keyboard_listener)]
     for t in threads:
