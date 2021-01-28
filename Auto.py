@@ -83,13 +83,12 @@ def similarity(im, gun_pos):
 
 # 截屏
 def screen(gun_pos):
-
+    n = 0
     while True:
-        similarity(screenshot(gun_pos))
-        if similarity(gun_pos):  # 如果返回True 退出循环
+        if similarity(screenshot(gun_pos), gun_pos):  # 如果返回True 退出循环
             break
         n = n+1
-        if n >= 5:  # 如果5次还没有识别出来 退出循环
+        if n >= 5:  # 如果5次还没有识别出来 退出循环1
             break
         time.sleep(1)
 
@@ -103,6 +102,7 @@ def play_sound(content):
     engine.runAndWait()
     engine.stop()
     pass
+
 
 # 监听键盘输入
 def on_release(key):
@@ -122,6 +122,7 @@ def consumer():
         key = q.get()
         screen(key)
         q.task_done()
+
 
 # 监听键盘输入
 def keyboard_listener():
@@ -149,7 +150,7 @@ def screenshot(gun_pos):
 
         shot = sct.grab(bbox)
         a = np.array(bytearray(shot.rgb), dtype=np.uint8).reshape((height, width, 3))
-        return a, gun_pos
+        return a
 
 
 # 程序入口
