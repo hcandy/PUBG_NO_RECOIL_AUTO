@@ -1,9 +1,6 @@
 import os
 import threading
 import time
-import win32con
-import win32gui
-import win32ui
 import cv2 as cv
 import pyttsx3 as pytts
 import pyttsx3.drivers
