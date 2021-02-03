@@ -1,0 +1,7 @@
+Auto.spec
+build/*
+.vscode/*
+__pycache__/*
+dist/*
+*.lua
+.idea
