@@ -16,8 +16,6 @@ q = Queue()
 
 current_gun = {1: "", 2: ""}  # 当前的武器名
 
-use_gun_config = "M416"  # 当前使用的配置 默认使用M416
-
 player_posture = 1  # 姿势 1为站 2为蹲 3为趴(暂时不用) 默认1
 
 gun_list = []
@@ -59,6 +57,8 @@ def save_gun_config(content):
         file.write("config='"+content+"'")
 
 # 对比图片特征点
+
+
 def image_similarity_opencv(img1, img2):
     image1 = cv.imread(img1, 0)
     image2 = cv.cvtColor(img2, cv.COLOR_RGB2GRAY)
@@ -79,7 +79,6 @@ def image_similarity_opencv(img1, img2):
 
 
 def similarity(im, gun_pos):
-    global use_gun_config
     for gun_name in gun_list:
         result = image_similarity_opencv(
             r"resource\\" + gun_name + ".png", im)
@@ -87,9 +86,8 @@ def similarity(im, gun_pos):
             if current_gun[gun_pos] != gun_name:
                 current_gun[gun_pos] = gun_name  # 避免重复操作
                 play_sound("切换武器," + gun_name+",当前武器," + str(gun_pos))
-            else:  # 只在第一次拿到这把枪的时候才播报语音吧 感觉有点卡 第二次切换的时候直接保存配置
-                print("切换武器," + gun_name+",当前武器," + str(gun_pos))
-
+            print("切换武器:" + gun_name+"  当前武器:" + str(gun_pos) +
+                  "  当前姿势:" + ("站" if player_posture == 1 else "蹲"))
             save_gun_config(get_gun_config_name(gun_name))
             return True
     return False
@@ -224,7 +222,7 @@ def screenshot(box):
 # 程序入口
 def main():
     os.system("title Main")
-    os.system("mode con cols=30 lines=30")
+    os.system("mode con cols=50 lines=30")
     print("         本软件免费使用!\n https://github.com/hcandy/PUBG_NO_RECOIL_AUTO\n 作者QQ:434461000")
 
     initialize("resource")
