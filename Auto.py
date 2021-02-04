@@ -127,8 +127,7 @@ def screen(gun_pos):
     n = 0
     while True:
         img = screenshot(box)
-        arr = np.array(bytearray(img.rgb), dtype=np.uint8).reshape(
-            (height, width, 3))
+        arr = np.array(img.pixels, dtype=np.uint8)
         if similarity(arr, gun_pos):  # 如果返回True 退出循环
             break
         n = n + 1
@@ -223,7 +222,7 @@ def screenshot(box):
 def main():
     os.system("title Main")
     os.system("mode con cols=50 lines=30")
-    print("         本软件免费使用!\n https://github.com/hcandy/PUBG_NO_RECOIL_AUTO\n 作者QQ:434461000")
+    print("                   本软件免费使用!\n https://github.com/hcandy/PUBG_NO_RECOIL_AUTO\n                   作者QQ:434461000")
 
     initialize("resource")
 
