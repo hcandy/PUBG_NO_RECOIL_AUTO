@@ -6,8 +6,8 @@ import pynput
 import cv2 as cv
 import numpy as np
 import pyttsx3 as pytts
-import pyttsx3.drivers
-import pyttsx3.drivers.sapi5
+# import pyttsx3.drivers
+# import pyttsx3.drivers.sapi5
 from mss import mss
 from queue import Queue
 from pynput.mouse import Button
@@ -18,9 +18,39 @@ current_gun = {1: "", 2: ""}  # 当前的武器名
 
 player_posture = 1  # 姿势 1为站 2为蹲 3为趴(暂时不用) 默认1
 
+player_bullets = 1
+
 gun_list = []
 
 gun_dict = {}
+
+job = None
+
+
+class Job(threading.Thread):
+
+    def __init__(self, *args, **kwargs):
+        super(Job, self).__init__(*args, **kwargs)
+        self.__flag = threading.Event()     # 用于暂停线程的标识
+        # self.__flag.set()       # 设置为True
+        self.__running = threading.Event()      # 用于停止线程的标识
+        self.__running.set()      # 将running设置为True
+
+    def run(self):
+        while self.__running.isSet():
+            self.__flag.wait()      # 为True时立即返回, 为False时阻塞直到内部的标识位为True后返回
+            posture()  # 姿势判断
+            bullets()  # 子弹数量判断
+
+    def pause(self):
+        self.__flag.clear()     # 设置为False, 让线程阻塞
+
+    def resume(self):
+        self.__flag.set()    # 设置为True, 让线程停止阻塞
+
+    def stop(self):
+        self.__flag.set()       # 将线程从暂停状态恢复, 如何已经暂停的话
+        self.__running.clear()        # 设置为False
 
 
 class Action(object):
@@ -35,6 +65,20 @@ class Action(object):
     def get_param(self):
         return self.param
 
+# 播放声音
+
+
+
+def play_sound(content):
+    engine = pytts.Engine()
+    engine.setProperty('rate', 220)  # 语速
+    engine.setProperty('volume', 0.35)  # 音量
+    engine.say(content)
+    engine.runAndWait()
+    engine.stop()
+
+    
+
 
 # 枪名取对应的lua配置名
 
@@ -43,18 +87,13 @@ def get_gun_config_name(gun_name):
     return gun_dict.get(gun_name) or gun_name
 
 
-# 保存姿势配置到D盘根目录 和下面还是分开写算了
-def save_posture_config(content):
-    file = "D:\\postureConfig.lua"
-    with open(file, "w+") as file:
-        file.write("posture='"+content+"'")
+# 保存数据
 
 
-# 保存枪配置到D盘根目录
-def save_gun_config(content):
-    file = "D:\\gunConfig.lua"
+def save_config(title, content):
+    file = "D:\\"+title+".lua"
     with open(file, "w+") as file:
-        file.write("config='"+content+"'")
+        file.write(title+"='"+content+"'")
 
 # 对比图片特征点
 
@@ -88,16 +127,15 @@ def similarity(im, gun_pos):
                 play_sound("切换武器," + gun_name+",当前武器," + str(gun_pos))
             print("切换武器:" + gun_name+"  当前武器:" + str(gun_pos) +
                   "  当前姿势:" + ("站" if player_posture == 1 else "蹲"))
-            save_gun_config(get_gun_config_name(gun_name))
+            save_config("config", get_gun_config_name(gun_name))
             return True
     return False
 
 # 判断姿势
 
 
-def posture(ti):
+def posture():
     global player_posture
-    time.sleep(ti)
     left = 960
     top = 1305
     width = 5
@@ -105,12 +143,35 @@ def posture(ti):
     box = (left, top, left + width, top + height)
     img = screenshot(box)
     r, g, b = img.pixel(3, 3)
-    if r >= 180 and g >= 180 and b >= 180:
-        player_posture = 1
+    if r < 180 and g < 180 and b < 180:
+        posture = 2
     else:
-        player_posture = 2
+        posture = 1
+    
+    save_config("posture", str(posture))
 
-    save_posture_config(str(player_posture))
+# 子弹数量判断
+
+
+def bullets():
+    global player_bullets
+    left = 1273
+    top = 1323
+    width = 5
+    height = 5
+    box = (left, top, left + width, top + height)
+    img = screenshot(box)
+    r, g, b = img.pixel(3, 3)
+    
+    if r == 255:
+        bullets = 0
+    else:
+        bullets = 1
+
+    save_config("bullets", str(bullets))
+    if bullets != player_bullets and bullets == 0:
+        player_bullets = bullets
+        play_sound("子弹耗尽")
 
 # 截屏
 
@@ -136,16 +197,6 @@ def screen(gun_pos):
         time.sleep(1)
 
 
-# 播放声音
-def play_sound(content):
-    engine = pytts.init()
-    engine.setProperty('rate', 220)  # 语速
-    engine.setProperty('volume', 0.35)  # 音量
-    engine.say(content)
-    engine.runAndWait()
-    engine.stop()
-
-
 # 消费者
 
 
@@ -163,16 +214,11 @@ def consumer():
 # 监听键盘输入
 def on_release(key):
     try:
-        if key.char == 'c' or key.char == 'C':
+        key = int(key.char)
+        if key == 1 or key == 2:
             q.queue.clear()  # 每次按下 1 或者 2  清空掉之前的队列
-            action = Action(False, 0.1)
+            action = Action(True, key)
             q.put(action)
-        else:
-            key = int(key.char)
-            if key == 1 or key == 2:
-                q.queue.clear()  # 每次按下 1 或者 2  清空掉之前的队列
-                action = Action(True, key)
-                q.put(action)
     finally:
         return True
 
@@ -189,9 +235,12 @@ def keyboard_listener():
 def on_click(x, y, button, pressed):
     if Button.right == button:
         if pressed:
-            q.queue.clear()  # 每次按下 1 或者 2  清空掉之前的队列
-            action = Action(False, 0.5)
-            q.put(action)
+            # q.queue.clear()  # 每次按下 1 或者 2  清空掉之前的队列
+            # action = Action(False, 0.5)
+            # q.put(action)
+            job.resume()  # 开始检测
+        else:
+            job.pause()  # 停止检测
 
 
 # 监听鼠标按键
@@ -220,14 +269,17 @@ def screenshot(box):
 
 # 程序入口
 def main():
+    global job
     os.system("title Main")
     os.system("mode con cols=50 lines=30")
     print("                   本软件免费使用!\n https://github.com/hcandy/PUBG_NO_RECOIL_AUTO\n                   作者QQ:434461000")
 
     initialize("resource")
 
+    job = Job()
+
     threads = [threading.Thread(target=consumer), threading.Thread(
-        target=keyboard_listener), threading.Thread(target=mouse_listener), ]
+        target=keyboard_listener), threading.Thread(target=mouse_listener), job]
     for t in threads:
         t.start()
 
